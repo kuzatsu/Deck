@@ -99,8 +99,16 @@
             "effects": {
                 "regular": "Multiply the multiplier by 4 if cards in your played hand add up to exactly 21 after calculation (not counting buffs).",
                 "southern": "Mentorship, following conventions",
-                "soloterrare": "Soul lessons, accessing ancient knowledge"
-            }
+                "soloterrare": "A long snake slithers down the corridor, its eyes milky white and a mouth that splits much further down its body than it should."            
+            },
+            "soloterrareStats": {
+                "attack": 10,
+                "defence": 300,
+                "chips": "700",
+                "critical": "Choose a played card. It gets a -10 BUFF. If this brings it below its face value its destroyed.",
+                "forlorn": "Shuffle all played cards back into the deck.",
+                "activation": "Choose a Suit. Buff each card of the chosen suit by +10. Shuffle any cards buffed back into the deck during refresh."
+        }
         },
         {
             "name": "The Lovers",
@@ -109,7 +117,15 @@
             "effects": {
                 "regular": "The next Flush or Straight you play only needs 4 cards instead of 5.",
                 "southern": "Important choices, moral dilemmas",
-                "soloterrare": "Sacred union, soul connections"
+                "soloterrare": "A pair of bodies, twisted and knotted in a shared hell of flesh. Their mouths seem to be locked in an eternal kiss as they feel blindly along the corridor."            
+            },
+            "soloterrareStats": {
+                "attack": 200,
+                "defence": 0,
+                "chips": "800",
+                "critical": "Destroy all played hearts.",
+                "forlorn": "Change the suit of every played card to heart.",
+                "activation": "Modify each heart by x10."
             }
         },
         {
@@ -119,7 +135,15 @@
             "effects": {
                 "regular": "Choose a player. Cards scored by them count towards your score this turn. Also, any buffs and multipliers on them are added to your hand value this turn. Give The Chariot to that player if you win.",
                 "southern": "Overcoming challenges, determination",
-                "soloterrare": "Balancing opposites, directed energy"
+                "soloterrare": "A man fused with a set of 4 wheels, his face blindfolded and several spikes lanced through him, he screams as he races down the corridors, spearing anything in his way."            
+            },
+            "soloterrareStats": {
+                "attack": 500,
+                "defence": 0,
+                "chips": "900",
+                "critical": "Destroy each card in your played hand.",
+                "forlorn": "The Chariot loses up to 500 chips, put them into your chips.",
+                "activation": "If you deal combat damage this turn, the hand you deal damage with gets x2."
             }
         },
         {
@@ -129,7 +153,15 @@
             "effects": {
                 "regular": "If you score a Flush this turn, double the multiplier after determining multiplier.",
                 "southern": "Inner strength, taming impulses",
-                "soloterrare": "Soul strength, spiritual courage"
+                "soloterrare": "A mass of muscles, the head of whatever they belong to lost amongst the flesh and veins. The rippling torso punches its way down the corridor, leaving splatters of blood from broken knuckles."            
+            },  
+            "soloterrareStats": {
+                "attack": 1000,
+                "defence": 0,
+                "chips": "1000",
+                "critical": "Destroy your hand.",
+                "forlorn": "Strength is defeated, gain its chips.",
+                "activation": "Buff any card by +100."
             }
         },
         {
@@ -139,7 +171,15 @@
             "effects": {
                 "regular": "If you score a High Card this turn, triple the multiplier after determining multiplier.",
                 "southern": "Withdrawal for perspective, seeking truth",
-                "soloterrare": "Inner illumination, divine guidance"
+                "soloterrare": "A shuffling man, covered in a cloak he leers out from under it, flinging knives with deadly precision."            
+},
+            "soloterrareStats": {
+                "attack": 50,
+                "defence":20,
+                "chips":"900",
+                "critical": "Destroy the highest value played card (you choose on a draw) and give the hermit 50 chips.",
+                "forlorn": "Turn the hermit facedown, this monster cannot be attacked until turned face up nor does it turn face up in the refresh phase. You may choose to destroy a card in a played hand during your combat phase to flip the hermit face up.",
+                "activation": "Choose a played card, if it attacks alone this turn, treat the monster’s DEFENCE as 0."
             }
         },
         {
@@ -149,7 +189,15 @@
             "effects": {
                 "regular": "Remove this Tarot and another Tarot in play.",
                 "southern": "Withdrawal for perspective, seeking truth",
-                "soloterrare": "Inner illumination, divine guidance"
+               "soloterrare": "A series of screaming faces, impaled to the inside of a spiked wheel that rolls down the corridor dark corridors."            
+},
+            "soloterrareStats": {
+                "attack": 300,
+                "defence": 0,
+                "chips": "700",
+                "critical": "Choose a card in play. The card’s rank becomes a nothing. Nothing’s are worth 0 and do not count to any hands but any buffs they might have still apply.",
+                "forlorn": "Increase the wheel of fortune’s chips by 10.",
+                "activation": "Reveal the top card of your deck. Buff a card in play by the value of the revealed card (including buffs) then put the revealed card into your hand."
             }
         },
         {
@@ -194,3 +242,7 @@
         }
     ]
 }
+
+
+
+
