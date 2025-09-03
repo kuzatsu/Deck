@@ -1,0 +1,363 @@
+:root{
+    --card-bg:rgba(0, 0, 0, 0.5);
+    --dark-text:#4a0a4b;;
+
+  --text-h: var(--white-1);
+  --text-m: var(--white-2);
+  --text-l: var(--white-3);
+  --bg-1: #056c6c;
+  --bg-2: #4a0a4b;
+
+  --white-1:#f5f5f5;
+  --white-2:#f2f4f8;
+  --white-3:#cdd1d5;
+  --blue-1: #4D9DD0;
+  --blue-2: #3C82B5;
+  --blue-3: #316E9E;
+  --red-1: #F28784;
+  --red-2: #E14B3A;
+  --red-3: #B43C31;
+  --green-1: #69B68D;
+  --green-2: #4E9472;
+  --green-3: #3E785E;
+  --yellow-1: #F79B15;
+  --yellow-2: #DB8D1D;
+  --yellow-3: #B47621;
+
+  --navy: #324461;
+  --purple-1:#9f608b;
+  --black:#111111;
+  --container-background:#374244;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+body {
+    background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
+    color: #f8f8f8;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #e9c46a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d0c4e4;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(45, 27, 78, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.deck-selector {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.deck-dropdown {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid #6b4e94;
+    background: rgba(31, 20, 51, 0.8);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e9c46a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    padding-right: 45px;
+    min-width: 200px;
+}
+
+.deck-dropdown:hover {
+    border-color: #e9c46a;
+}
+
+.deck-dropdown:focus {
+    outline: none;
+    border-color: #e9c46a;
+    box-shadow: 0 0 15px rgba(233, 196, 106, 0.3);
+}
+
+.deck-dropdown option {
+    background: #2d1b4e;
+    color: white;
+    padding: 10px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 12px 20px 12px 45px;
+    border-radius: 25px;
+    border: 2px solid #6b4e94;
+    background: rgba(31, 20, 51, 0.8);
+    color: white;
+    font-size: 1rem;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #e9c46a;
+    box-shadow: 0 0 15px rgba(233, 196, 106, 0.3);
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    color: #9f85c9;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #3a2471;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 12px;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 60%, transparent 100%);
+    padding: 20px;
+    color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-index {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: var(--text-h);
+    font-weight: bold;
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+.card-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e9c46a;
+}
+
+.card-effect {
+    font-size: 1rem;
+    color: #f0e6ff;
+    line-height: 1.5;
+    padding: 12px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    border-left: 3px solid #e9c46a;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Soloterrare specific styles */
+.soloterrare-card {
+    height: 550px;
+}
+
+.soloterrare-stats {
+   /*  display:grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    width:100%;
+    display:flex;
+    gap: 8px;
+    margin-bottom: -12px;
+    justify-content: space-between;
+
+}
+
+.stat {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    position: relative;
+    color: var(--white-3);
+    /* Add flexbox for better text alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Use background-image instead of content for the icons */
+.stat::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Make icon more transparent */
+    z-index: 1; /* Place behind text */
+}
+
+.stat.attack::before {
+    background-image: url(crossed-swords.svg);
+}
+
+.stat.defence::before {
+    background-image: url(shield.svg);
+}
+
+.stat.chips::before {
+    background-image: url(two-coins.svg);
+}
+
+.stat-value {
+    color: #e9c46a;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    z-index: 2; /* Higher than the icon */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.6rem;
+    line-height: 1.2rem;
+    position: relative; /* Ensure z-index works */
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    z-index: 2; /* Higher than the icon */
+    position: relative; /* Ensure z-index works */
+}
+
+.ability {
+    padding: 8px;
+    background: var(--card-bg);
+    border-radius: 4px;
+    border-left: 2px solid #ff6b6b;
+}
+
+.ability-title {
+    font-weight: bold;
+    color: #ff6b6b;
+    margin-bottom: 4px;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+    color: #9f85c9;
+}
+
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .deck-dropdown, .search-input {
+        width: 100%;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    
+    .card {
+        height: 450px;
+    }
+    
+    .soloterrare-card {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .card {
+        height: 400px;
+    }
+    
+    .soloterrare-card {
+        height: 450px;
+    }
+}

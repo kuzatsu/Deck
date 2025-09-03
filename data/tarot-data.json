@@ -1,0 +1,196 @@
+{
+    "cards": [
+        {
+            "name": "The Fool",
+            "index": 0,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar00.jpg",
+            "effects": {
+                "regular": "Remove all Tarot played by you. Put a Tarot from your secondary hand into play and place The Fool under it (The Fool is not in play and is linked to it). This Tarot cannot be removed and activates twice for the rest of the game.",
+                "southern": "A free spirit, taking a leap of faith",
+                "coulette": "Shuffle the revealed card back into the deck and choose to aim at another player. Then reveal the top card. Chips stolen or lost from this shot are doubled.",
+                "soloterrare": "A blood-spattered jester, moving as though suspended by unseen strings"
+            },
+            "soloterrareStats": {
+                "attack": 2,
+                "defence": 400,
+                "chips": "10,000",
+                "critical": "The Fool takes all your chips",
+                "forlorn": "Take the rightmost played Tarot and place it next to the Jester in combat",
+                "activation": "Remove all Tarot in play (not including the monsters). Then put a Tarot from your hand into play with The Fool under it. When that Tarot activates, it activates twice. It cannot be removed or stolen."
+            }
+            
+        },
+        {
+            "name": "The Magician",
+            "index": 1,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar01.jpg",
+            "effects": {
+                "regular": "Fast. When the next card in your played hand would be destroyed, flip a coin and call it. If you call correctly, the card isn’t destroyed.",
+                "southern": "",
+                "soloterrare": "A tall black hat adorns a black cape. Under it, many eyes and hands can be seen as they shape the cape into different forms."
+            },
+            "soloterrareStats": {
+                "attack": 10,
+                "defence": 450,
+                "chips": "800",
+                "critical": "Take the leftmost played Tarot and place it over The Magician. Put aside The Magician's chips and place the new monster's chips next to it. The Magician is not in play and returns to play when this monster is defeated.",
+                "forlorn": "Place the rightmost played Tarot under The Magician. This Tarot is returned to your secondary hand when The Magician is defeated.",
+                "activation": "Choose a played card. That card can block after attacking this turn."
+            }
+        },
+        {
+            "name": "The High Priestess",
+            "index": 2,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar02.jpg",
+            "effects": {
+                "regular": "During scoring, all face cards in your played hand add +30 to the score. This is not a permanent buff.",
+                "southern": "",
+                "soloterrare": "A tall thin woman, her mouth covered in a metal cage. Her arms are covered in thick metal braces that end in claws."
+            },
+            "soloterrareStats": {
+                "attack": 40,
+                "defence": 100,
+                "chips": "800",
+                "critical": "Shuffle your hand and destroy a card at random.",
+                "forlorn": "Give The High Priestess 50 of your chips.",
+                "activation": "Choose a card in play. If that card is a Queen it gets ×12. If it is not a Queen it becomes a Queen."
+            }
+        },
+        {
+            "name": "The Empress",
+            "index": 3,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar03.jpg",
+            "effects": {
+                "regular": "Destroy all cards with rank lower than 4. Does not count Aces.",
+                "southern": "",
+              "soloterrare": "A bloodied royal figure, her dress seeping with so much blood it looks scarlet. Her face is forlorn and sad as she slashes at you with a simple kitchen knife."
+            },
+            "soloterrareStats": {
+                "attack": 10,
+                "defence": 100,
+                "chips": "1,000",
+                "critical": "If The Empress took damage this turn, it deals that much extra damage.",
+                "forlorn": "If The Empress took damage this turn, search the shop, discard, in play, and secondary hand for The Emperor and put it into play alongside The Empress. Only the Queen needs to be defeated to end the battle.",
+                "activation": "Buff every Queen in play by +50."
+            }
+        },
+        {
+            "name": "The Emperor",
+            "index": 4,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar04.jpg",
+            "effects": {
+                "regular": "Buff any King by +100, minus 10 for each Tarot activated this turn before this. You cannot activate any Tarot after this Tarot.",
+                "southern": "Establishing order, leadership qualities",
+                "soloterrare": "A fat man, his stomach a dripping mess of viscera and his gold crown dropping over a kind face. Amongst his guts things seem to squirm and mewl."
+            },
+            "soloterrareStats": {
+                "attack": 50,
+                "defence": 300,
+                "chips": "1,000",
+                "critical": "Discard cards from the top of your deck until you discard a King or reach the bottom of your deck. Destroy that King, then shuffle your discard into your deck.",
+                "forlorn": "Add 50 chips to the King’s pile of chips.",
+                "activation": "Look at the top 5 cards of your deck. You may lose 50 chips per card in these 5 to add it to your hand. Then discard any unbought cards."
+            }
+        },
+        {
+            "name": "The Hierophant",
+            "index": 5,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar05.jpg",
+            "effects": {
+                "regular": "Multiply the multiplier by 4 if cards in your played hand add up to exactly 21 after calculation (not counting buffs).",
+                "southern": "Mentorship, following conventions",
+                "soloterrare": "Soul lessons, accessing ancient knowledge"
+            }
+        },
+        {
+            "name": "The Lovers",
+            "index": 6,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar06.jpg",
+            "effects": {
+                "regular": "The next Flush or Straight you play only needs 4 cards instead of 5.",
+                "southern": "Important choices, moral dilemmas",
+                "soloterrare": "Sacred union, soul connections"
+            }
+        },
+        {
+            "name": "The Chariot",
+            "index": 7,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar07.jpg",
+            "effects": {
+                "regular": "Choose a player. Cards scored by them count towards your score this turn. Also, any buffs and multipliers on them are added to your hand value this turn. Give The Chariot to that player if you win.",
+                "southern": "Overcoming challenges, determination",
+                "soloterrare": "Balancing opposites, directed energy"
+            }
+        },
+        {
+            "name": "Strength",
+            "index": 8,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar08.jpg",
+            "effects": {
+                "regular": "If you score a Flush this turn, double the multiplier after determining multiplier.",
+                "southern": "Inner strength, taming impulses",
+                "soloterrare": "Soul strength, spiritual courage"
+            }
+        },
+        {
+            "name": "The Hermit",
+            "index": 9,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar09.jpg",
+            "effects": {
+                "regular": "If you score a High Card this turn, triple the multiplier after determining multiplier.",
+                "southern": "Withdrawal for perspective, seeking truth",
+                "soloterrare": "Inner illumination, divine guidance"
+            }
+        },
+        {
+            "name": "Justice",
+            "index": 10,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar10.jpg",
+            "effects": {
+                "regular": "Remove this Tarot and another Tarot in play.",
+                "southern": "Withdrawal for perspective, seeking truth",
+                "soloterrare": "Inner illumination, divine guidance"
+            }
+        },
+        {
+            "name": "The Hanged Man",
+            "index": 11,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar11.jpg",
+            "effects": {
+                "regular": "Discard your current played hand and play a new hand face-up.",
+                "southern": "Withdrawal for perspective, seeking truth",
+                "soloterrare": "Inner illumination, divine guidance"
+            }
+        },
+        {
+            "name": "Death",
+            "index": 12,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar12.jpg",
+            "effects": {
+                "regular": "Choose a suit. Cards of the chosen suit do not score this round, their multipliers are not added, and they do not count towards their played hands.",
+                "southern": "Withdrawal for perspective, seeking truth",
+                "soloterrare": "Inner illumination, divine guidance"
+            }
+        },
+        {
+            "name": "Temperance",
+            "index": 13,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar13.jpg",
+            "effects": {
+                "regular": "Trade this Tarot with a non-activated Tarot in play.",
+                "southern": "Withdrawal for perspective, seeking truth",
+                "soloterrare": "Inner illumination, divine guidance"
+            }
+        },
+        {
+            "name": "The Devil",
+            "index": 14,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar14.jpg",
+            "effects": {
+                "regular": "Double the score of each card in your played hand this turn. This turn, if you lose, the opponent gains double your chips.",
+                "southern": "Withdrawal for perspective, seeking truth",
+                "soloterrare": "Inner illumination, divine guidance"
+            }
+        }
+    ]
+}

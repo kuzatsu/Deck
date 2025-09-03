@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Card Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <!--  <header>
+        <h1>Tarot Card Gallery</h1>
+        <p class="description">
+            Explore the mystical world of tarot cards. Select a deck type to view different interpretations and effects for each card.
+            Use the search feature to find specific cards by name or keyword.
+        </p>
+    </header> -->
+    
+    <div class="controls">
+        <div class="deck-selector">
+            <select id="deckSelect" class="deck-dropdown">
+                <option value="regular">Regular</option>
+                <option value="southern">Southern</option>
+                <option value="soloterrare">Soloterrare</option>
+                <option value="coulette">Coulette</option>
+            </select>
+        </div>
+        
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search tarot cards..." id="searchInput">
+        </div>
+    </div>
+    
+    <div class="card-grid" id="cardGrid">
+        <!-- Cards will be generated here -->
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
