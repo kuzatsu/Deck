@@ -172,7 +172,7 @@
                 "regular": "If you score a High Card this turn, triple the multiplier after determining multiplier.",
                 "southern": "Withdrawal for perspective, seeking truth",
                 "soloterrare": "A shuffling man, covered in a cloak he leers out from under it, flinging knives with deadly precision."            
-},
+            },
             "soloterrareStats": {
                 "attack": 50,
                 "defence":20,
@@ -190,7 +190,7 @@
                 "regular": "Remove this Tarot and another Tarot in play.",
                 "southern": "Withdrawal for perspective, seeking truth",
                "soloterrare": "A series of screaming faces, impaled to the inside of a spiked wheel that rolls down the corridor dark corridors."            
-},
+            },
             "soloterrareStats": {
                 "attack": 300,
                 "defence": 0,
@@ -207,7 +207,15 @@
             "effects": {
                 "regular": "Discard your current played hand and play a new hand face-up.",
                 "southern": "Withdrawal for perspective, seeking truth",
-                "soloterrare": "Inner illumination, divine guidance"
+                "soloterrare": "A man, wrapped up wires and pipes that extend from its skin, he hangs from a rail set into the ceiling. As he races down the corridor, his metallic mouth gnashes and grinds."            
+            },
+            "soloterrareStats": {
+                "attack": 40,
+                "defence":80,
+                "chips":"600",
+                "critical": "Turn 3 played cards of your choice upside down. Upside down cards cannot attack but can block.",
+                "forlorn": "Turn a played card of your choice upside down. Upside down cards cannot attack but can block.",
+                "activation": "After the combat phase this turn, discard all played cards and replace each one with a card in your hand."
             }
         },
         {
@@ -217,27 +225,51 @@
             "effects": {
                 "regular": "Choose a suit. Cards of the chosen suit do not score this round, their multipliers are not added, and they do not count towards their played hands.",
                 "southern": "Withdrawal for perspective, seeking truth",
-                "soloterrare": "Inner illumination, divine guidance"
-            }
+                "soloterrare": "A mass of black cloaks and hands, crawling and scuttling along the walls. The sound of wind is the only sound it seems to make."            
+            },
+            "soloterrareStats": {
+                "attack": 400,
+                "defence": 0,
+                "chips": "100",
+                "critical": "Destroy the top 10 cards of your deck.",
+                "forlorn": "Lose 100 chips and give them to death.",
+                "activation": "Choose a minor arcana monster and take all that monster’s chips. Then remove death and put it into tarot discard."
+            }   
         },
         {
             "name": "Temperance",
             "index": 13,
-            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar13.jpg",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar14.jpg",
             "effects": {
                 "regular": "Trade this Tarot with a non-activated Tarot in play.",
                 "southern": "Withdrawal for perspective, seeking truth",
-                "soloterrare": "Inner illumination, divine guidance"
+               "soloterrare": "A white robed angel like creature. Gliding across the ground it seems to sing with a choir of many voices, burning those it touches without fire."            
+            },
+            "soloterrareStats": {
+                "attack": 50,
+                "defence":250,
+                "chips":"800",
+                "critical": "Buff each card in your played hand by +10.",
+                "forlorn": "Destroy all cards in your played hand with value 10+.",
+                "activation": "Buff each card in your played hand by +10 then put temperance into your secondary hand."
             }
         },
         {
             "name": "The Devil",
             "index": 14,
-            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar14.jpg",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar15.jpg",
             "effects": {
                 "regular": "Double the score of each card in your played hand this turn. This turn, if you lose, the opponent gains double your chips.",
                 "southern": "Withdrawal for perspective, seeking truth",
-                "soloterrare": "Inner illumination, divine guidance"
+               "soloterrare": "A red skinned creature, covered in faces and hanging from the ceiling by long, ape-like limbs."            
+            },
+            "soloterrareStats": {
+                "attack": 250,
+                "defence": 50,
+                "chips": "10000",
+                "critical": "Buff all cards in your played hand by +50.",
+                "forlorn": "Destroy every card in your played hand.",
+                "activation": "Choose a played card, if it attacks this turn, buff it by +50 before damage calculation, then destroy it."
             }
         }
     ]

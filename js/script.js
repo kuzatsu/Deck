@@ -64,7 +64,7 @@ function displayCards(cards) {
                 <div class="card-image" style="background-image: url('${card.image}')">
                     <div class="card-index">${card.index}</div>
                     <div class="card-overlay">
-                        <div class="card-name">${card.name}</div>
+                        <div class="card-name overlay-effect">${card.name}</div>
                         <div class="overlay-effect">${card.effects[currentDeck]}</div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ function createSoloterrareCardHTML(card) {
         <div class="card-image" style="background-image: url('${card.image}')">
             <div class="card-index">${card.index}</div>
             <div class="card-overlay">
-                <div class="card-name">${card.name}
+                <div class="overlay-effect card-name">${card.name}
                     <div class="toggle-container">
                         <button class="toggle-btn active" data-card="${cardId}" data-target="abilities">Enemy</button>      
                         <button class="toggle-btn" data-card="${cardId}" data-target="activation">Item</button>
