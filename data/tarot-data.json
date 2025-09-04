@@ -6,7 +6,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar00.jpg",
             "effects": {
                 "regular": "Remove all Tarot played by you. Put a Tarot from your secondary hand into play and place The Fool under it (The Fool is not in play and is linked to it). This Tarot cannot be removed and activates twice for the rest of the game.",
-                "southern": "A free spirit, taking a leap of faith",
+                "southern": "Discard every player’s played hand. You select 5 cards (or all if there’s less than 5 cards) from each player’s primary hand at random and put them into that player’s played hand.",
                 "coulette": "Shuffle the revealed card back into the deck and choose to aim at another player. Then reveal the top card. Chips stolen or lost from this shot are doubled.",
                 "soloterrare": "A blood-spattered jester, moving as though suspended by unseen strings"
             },
@@ -26,7 +26,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar01.jpg",
             "effects": {
                 "regular": "Fast. When the next card in your played hand would be destroyed, flip a coin and call it. If you call correctly, the card isn’t destroyed.",
-                "southern": "",
+                "southern": "Remove this tarot, take the top 2 tarot of the tarot deck and put them into play in front of you.",
                 "soloterrare": "A tall black hat adorns a black cape. Under it, many eyes and hands can be seen as they shape the cape into different forms."
             },
             "soloterrareStats": {
@@ -44,7 +44,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar02.jpg",
             "effects": {
                 "regular": "During scoring, all face cards in your played hand add +30 to the score. This is not a permanent buff.",
-                "southern": "",
+                "southern": "During scoring you may destroy a card in your primary hand. Add the value of the card destroyed to the multiplier of your hand value.",
                 "soloterrare": "A tall thin woman, her mouth covered in a metal cage. Her arms are covered in thick metal braces that end in claws."
             },
             "soloterrareStats": {
@@ -62,7 +62,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar03.jpg",
             "effects": {
                 "regular": "Destroy all cards with rank lower than 4. Does not count Aces.",
-                "southern": "",
+                "southern": "Stitch each king in each played hand onto each queen in each played hand. Each queen may only receive one king each and you decide how they are distributed.",
               "soloterrare": "A bloodied royal figure, her dress seeping with so much blood it looks scarlet. Her face is forlorn and sad as she slashes at you with a simple kitchen knife."
             },
             "soloterrareStats": {
@@ -80,7 +80,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar04.jpg",
             "effects": {
                 "regular": "Buff any King by +100, minus 10 for each Tarot activated this turn before this. You cannot activate any Tarot after this Tarot.",
-                "southern": "Establishing order, leadership qualities",
+                "southern": "Buff each queen by +10 and add x10 to each king.",
                 "soloterrare": "A fat man, his stomach a dripping mess of viscera and his gold crown dropping over a kind face. Amongst his guts things seem to squirm and mewl."
             },
             "soloterrareStats": {
@@ -98,7 +98,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar05.jpg",
             "effects": {
                 "regular": "Multiply the multiplier by 4 if cards in your played hand add up to exactly 21 after calculation (not counting buffs).",
-                "southern": "Mentorship, following conventions",
+                "southern": "Destroy each face card and remove this tarot.",
                 "soloterrare": "A long snake slithers down the corridor, its eyes milky white and a mouth that splits much further down its body than it should."            
             },
             "soloterrareStats": {
@@ -116,7 +116,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar06.jpg",
             "effects": {
                 "regular": "The next Flush or Straight you play only needs 4 cards instead of 5.",
-                "southern": "Important choices, moral dilemmas",
+                "southern": "The next straight you score can skip up to 1 rank. (E.g. a straight can be 2, 4, 5, 7, 9.)",
                 "soloterrare": "A pair of bodies, twisted and knotted in a shared hell of flesh. Their mouths seem to be locked in an eternal kiss as they feel blindly along the corridor."            
             },
             "soloterrareStats": {
@@ -134,7 +134,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar07.jpg",
             "effects": {
                 "regular": "Choose a player. Cards scored by them count towards your score this turn. Also, any buffs and multipliers on them are added to your hand value this turn. Give The Chariot to that player if you win.",
-                "southern": "Overcoming challenges, determination",
+                "southern": "This turn a winner is not decided, however each hand is still scored. Player’s set aside their score and add the result to the next round’s result. Remove this tarot.",
                 "soloterrare": "A man fused with a set of 4 wheels, his face blindfolded and several spikes lanced through him, he screams as he races down the corridors, spearing anything in his way."            
             },
             "soloterrareStats": {
@@ -152,7 +152,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar08.jpg",
             "effects": {
                 "regular": "If you score a Flush this turn, double the multiplier after determining multiplier.",
-                "southern": "Inner strength, taming impulses",
+                "southern": "Buff each card in your played hand by its card value.",
                 "soloterrare": "A mass of muscles, the head of whatever they belong to lost amongst the flesh and veins. The rippling torso punches its way down the corridor, leaving splatters of blood from broken knuckles."            
             },  
             "soloterrareStats": {
@@ -170,7 +170,7 @@
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar09.jpg",
             "effects": {
                 "regular": "If you score a High Card this turn, triple the multiplier after determining multiplier.",
-                "southern": "Withdrawal for perspective, seeking truth",
+                "southern": "Destroy all cards but one in your played hand. Add x30 to your hands multiplier this round.",
                 "soloterrare": "A shuffling man, covered in a cloak he leers out from under it, flinging knives with deadly precision."            
             },
             "soloterrareStats": {
@@ -183,17 +183,17 @@
             }
         },
         {
-            "name": "Justice",
+            "name": "Wheel of Fortune",
             "index": 10,
-            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar11.jpg",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar10.jpg",
             "effects": {
-                "regular": "Remove this Tarot and another Tarot in play.",
-                "southern": "Withdrawal for perspective, seeking truth",
-               "soloterrare": "A series of screaming faces, impaled to the inside of a spiked wheel that rolls down the corridor dark corridors."            
+                "regular": "Fast. Each opponent gives you a card to be added to your main hand from their main hand at random.",
+                "southern": "Starting with you each player may bid an amount of chips. Bidding continues until a winner is decided. The winner loses the chips they bidded and takes half that many chips rounded up from each other player.",
+                "soloterrare": "A series of screaming faces, impaled to the inside of a spiked wheel that rolls down the corridor dark corridors."            
             },
             "soloterrareStats": {
                 "attack": 300,
-                "defence": 0,
+                "defence": 10,
                 "chips": "700",
                 "critical": "Choose a card in play. The card’s rank becomes a nothing. Nothing’s are worth 0 and do not count to any hands but any buffs they might have still apply.",
                 "forlorn": "Increase the wheel of fortune’s chips by 10.",
@@ -201,12 +201,30 @@
             }
         },
         {
-            "name": "The Hanged Man",
+            "name": "Justice",
             "index": 11,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar11.jpg",
+            "effects": {
+                "regular": "Remove this Tarot and another Tarot in play.",
+                "southern": "Whenever a tarot is activated after this tarot it is removed. (It still activates.)",
+               "soloterrare": "A woman in a white gown, her eyes sewn shut and her screams shrill as she feels her way along, attacking anything she reaches."            
+            },
+            "soloterrareStats": {
+                "attack": 100,
+                "defence": 100,
+                "chips": "600",
+                "critical": "Destroy any cards that attacked justice this turn.",
+                "forlorn": "Destroy a card of your choice that did not block this turn.",
+                "activation": "For each card destroyed from the monster’s attack this turn, take 50 of the monster’s chips."
+            }
+        },
+        {
+            "name": "The Hanged Man",
+            "index": 12,
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar12.jpg",
             "effects": {
                 "regular": "Discard your current played hand and play a new hand face-up.",
-                "southern": "Withdrawal for perspective, seeking truth",
+                "southern": "Discard all tarot but this tarot. Put that many tarot into play in front of you from the top of the tarot deck.",
                 "soloterrare": "A man, wrapped up wires and pipes that extend from its skin, he hangs from a rail set into the ceiling. As he races down the corridor, his metallic mouth gnashes and grinds."            
             },
             "soloterrareStats": {
@@ -220,11 +238,11 @@
         },
         {
             "name": "Death",
-            "index": 12,
+            "index": 13,
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar13.jpg",
             "effects": {
                 "regular": "Choose a suit. Cards of the chosen suit do not score this round, their multipliers are not added, and they do not count towards their played hands.",
-                "southern": "Withdrawal for perspective, seeking truth",
+                "southern": "The winner this round may choose to forfeit stealing a card from a player this round to take an extra 100 chips.",
                 "soloterrare": "A mass of black cloaks and hands, crawling and scuttling along the walls. The sound of wind is the only sound it seems to make."            
             },
             "soloterrareStats": {
@@ -238,11 +256,11 @@
         },
         {
             "name": "Temperance",
-            "index": 13,
+            "index": 14,
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar14.jpg",
             "effects": {
                 "regular": "Trade this Tarot with a non-activated Tarot in play.",
-                "southern": "Withdrawal for perspective, seeking truth",
+                "southern": "If your chips would be reduced to 0 this round, instead remove this tarot and make your chips 100.",
                "soloterrare": "A white robed angel like creature. Gliding across the ground it seems to sing with a choir of many voices, burning those it touches without fire."            
             },
             "soloterrareStats": {
@@ -256,12 +274,12 @@
         },
         {
             "name": "The Devil",
-            "index": 14,
+            "index": 15,
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar15.jpg",
             "effects": {
                 "regular": "Double the score of each card in your played hand this turn. This turn, if you lose, the opponent gains double your chips.",
-                "southern": "Withdrawal for perspective, seeking truth",
-               "soloterrare": "A red skinned creature, covered in faces and hanging from the ceiling by long, ape-like limbs."            
+                "southern": "Multiply the multiplier of your hand value by 10. If you lose this round, choose a player to receive this tarot and all your chips.",
+                "soloterrare": "A red skinned creature, covered in faces and hanging from the ceiling by long, ape-like limbs."            
             },
             "soloterrareStats": {
                 "attack": 250,
@@ -270,6 +288,114 @@
                 "critical": "Buff all cards in your played hand by +50.",
                 "forlorn": "Destroy every card in your played hand.",
                 "activation": "Choose a played card, if it attacks this turn, buff it by +50 before damage calculation, then destroy it."
+            }
+        },
+        {
+            "name": "The Tower",
+            "index": 16,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar16.jpg",
+            "effects": {
+                "regular": "Choose a card in play. Each time a tarot is activated after this give that card +10. If you activate another tarot this turn, destroy that card.",
+                "southern": "Place a tarot under this tarot. When this tarot is activated, activate each tarot underneath it. If this tarot is removed, remove all tarot underneath it.",
+                "soloterrare": "A large shuffling mass of flesh, many limbs and mouths pulling a cylinder of grotesque down the tight corridor. It moans and leaves a trail of lymph as it goes."            
+            },
+            "soloterrareStats": {
+                "attack": "X",
+                "defence": "Y",
+                "chips": "1000",
+                "critical": "Buff the right most played card by -X where X is the tower’s CHIPS. If this brings the card's value below its face value it is destroyed.",
+                "forlorn": "Add 500 chips to the tower’s CHIPS. <br> Special attack - (X): is its CHIPS. <br>Special defence - (Y): is the highest face value amongst your played cards.",
+                "activation": "Choose a card, buff it by +10 per tarot activated after this tarot this turn. It cannot attack this turn."
+            }
+        },
+        {
+            "name": "The Star",
+            "index": 17,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar17.jpg",
+            "effects": {
+                "regular": "This scoring phase, clubs/spades are the same and all diamonds/hearts are the same.",
+                "southern": "At the beginning of scoring, half the multiplier of each hand value’s multiplier rounded down.",
+                "soloterrare": "A mass of tentacles, suspending a bulbous eye from the walls. It snaps and slashes at anything it can see."            
+            },
+            "soloterrareStats": {
+                "attack": 100,
+                "defence": 50,
+                "chips": "800",
+                "critical": "Remove the left most and right most tarot in play.",
+                "forlorn": "Remove the last activated tarot.",
+                "activation": "Double the effect of the next tarot activated this turn."
+            }
+        },
+        {
+            "name": "The Moon",
+            "index": 18,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar18.jpg",
+            "effects": {
+                "regular": "Buff one card you have played by +30 and one card an opponent has played.",
+                "southern": "Choose a rank, buff each card in each played hand by +30 of the chosen rank.",
+                "soloterrare": "A large veiny ball of flesh, taunt and pulsing it contains several eyes just below the surface as it rolls down the corridors."            
+            },
+            "soloterrareStats": {
+                "attack": 50,
+                "defence":100,
+                "chips":"800",
+                "critical": "Remove the last 2 activated tarot this turn.",
+                "forlorn": "Remove a random tarot from your secondary hand.",
+                "activation": "Attacked cards can block this turn. Put this tarot back into your secondary hand."
+            }
+        },
+        {
+            "name": "The Sun",
+            "index": 19,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar19.jpg",
+            "effects": {
+                "regular": "Destroy one card you have played and one card an opponent has played of the same suit or rank.",
+                "southern": "Choose a card in a played hand. Change that card to a 0. A 0 does not count towards a straight  (but can be counted in pair, four of a kind, etc if more than one 0 is involved.) The card value of a 0 is 0.",
+               "soloterrare": "A spiked ball of flesh, covered in golden hair that tangle it across the corridors and covered in eyes and teeth."            
+            },
+            "soloterrareStats": {
+                "attack": 150,
+                "defence": 150,
+                "chips": "800",
+                "critical": "Remove all activated tarot.",
+                "forlorn": "Remove all non activated tarot.",
+                "activation": "Triple the effect of the next tarot activated this turn."
+            }
+        },
+        {
+            "name": "The Judgement",
+            "index": 20,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar20.jpg",
+            "effects": {
+                "regular": "Pick a suit. Buff all cards of the chosen suit by +10.",
+                "southern": "Put all cards in all played hands face-down. Shuffle them and distribute them back to each player one at a time in player order until each player has a new played hand. Then turn them all face-up.",
+               "soloterrare": "A rolling iron maiden, painted with a smiling face and carrying two chained blades that it swings about it."            
+},
+            "soloterrareStats": {
+                "attack": 300,
+                "defence": 300,
+                "chips": "500",
+                "critical": "Destroy an amount of random cards from your hand equal to the number of tarot activated this turn.",
+                "forlorn": "Choose and remove all but 3 tarot in play. Put these tarot under judgement. These tarot are returned to your secondary hand after battle.",
+                "activation": "If a monster’s critical activates this turn, take up to 200 of its chips and add them to your chips."
+            }
+        },
+        {
+            "name": "The World",
+            "index": 21,
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar21.jpg",
+            "effects": {
+                "regular": "Shuffle all played hands, discard and tarot back into their respective decks. End the round without a winner. Then remove the world (not literally.)",
+                "southern": "Each player trades tarot with the player to their right. Activated and non-activated tarot remain as they were.",
+               "soloterrare": "An oppressive feeling, causing internal bleeding and teeth to fall out."            
+            },
+            "soloterrareStats": {
+                "attack": 2,
+                "defence": 0,
+                "chips": "7000",
+                "critical": "Lose all your chips.",
+                "forlorn": "Lose half your chips, rounded down.",
+                "activation": "Discard your hand then draw that many cards."
             }
         }
     ]

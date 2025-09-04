@@ -84,6 +84,8 @@ header {
 }
 
 h1 {
+    font-family: "Alagard", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
     font-size: 2.8rem;
     margin-bottom: 10px;
     color: var(--yellow-0);
@@ -217,9 +219,188 @@ h1 {
     background-position: center;
     position: relative;
     border-radius: 12px;
+
+    .card-index {
+        font-family: "Alagard", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        top: 2px;
+        left: 0;
+        right:0;
+        margin:auto;
+        color: var(--text-l);
+        font-weight: bold;
+        font-size: 0.8rem;
+        z-index: 10;
+        text-align: center;
+    }
+
+    .soloterrare-card .card-overlay {
+        background: linear-gradient(to top, rgba(0, 0, 0, 01) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%);
+    }
+
+    .card-overlay {
+        z-index: 10;
+        position: absolute;
+        justify-content: space-between;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 20%, transparent 100%);
+        padding: 16px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .soloterrare-stats {
+            width:100%;
+            display:flex;
+            gap: 2px;
+            margin-bottom: -4px;
+            justify-content: space-between;
+
+            .stat {
+                background: rgba(0, 0, 0, 0.4);
+                border-radius: 4px;
+                position: relative;
+                color: var(--white-3);
+                /* Add flexbox for better text alignment */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Use background-image instead of content for the icons */
+            .stat::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 48px;
+                height: 48px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 0.5; /* Make icon more transparent */
+                z-index: 1; /* Place behind text */
+            }
+
+            .stat.attack::before {
+                background-image: url(crossed-swords.svg);
+            }
+
+            .stat.defence::before {
+                background-image: url(shield.svg);
+            }
+
+            .stat.chips::before {
+                background-image: url(two-coins.svg);
+            }
+
+            .stat-value {
+                color: #e9c46a;
+                font-weight: bold;
+                text-align: center;
+                width: 100%;
+                z-index: 2; /* Higher than the icon */
+                font-size: 2rem;
+                line-height: 1.2rem;
+                font-family: "Jacquard", system-ui;
+                position: relative; /* Ensure z-index works */
+            }
+
+            .stat-label {
+                font-family: "Jersey", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1rem;
+                text-align: center;
+                width: 100%;
+                z-index: 2; /* Higher than the icon */
+                position: relative; /* Ensure z-index works */
+            }
+
+
+        }
+
+        .toggle-container {
+            position: absolute;
+            top: 80px;
+            right: 15px;
+            z-index: 10;
+            display:flex;
+            flex-direction: column;
+        }
+
+        .card-name, .card-name.overlay-effect {
+            width:100%;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: var(--yellow-0);
+            font-family: "Alagard", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing:0.05em;
+            border-left: var(--decoration-name);
+            border-right: var(--decoration-name);
+            background:rgba(0, 0, 0, 0.6);
+        }
+    
+
+
+        .overlay-effect {
+            font-size: 1rem;
+            line-height: 1.1;
+            padding: 4px 8px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border-left: var(--decoration-effect);
+            border-right: var(--decoration-effect);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+            letter-spacing:0.02em;
+            text-align: left;
+        }
+            /* Soloterrare specific styles */
+        .overlay-effect.solo {
+            /* font-style: italic; */
+            border-left: var(--decoration-flavour);
+            border-right: var(--decoration-flavour);
+            color: var(--text-l);
+            font-family: "Alagard", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing:0.01em;
+        }
+
+        .overlay-effect.ability {
+            border-left: var(--decoration-ability);
+            border-right: var(--decoration-ability);
+        }
+
+        .overlay-effect.critical {
+            border-left: var(--decoration-critical);
+            border-right: var(--decoration-critical);
+        
+
+        }
+
+        .contents{
+
+            .content-section {
+                display: none;
+                flex-direction: column;
+                letter-spacing:0.02em;
+                gap: 4px;
+            }
+
+            .content-section.active {
+                display: flex;
+            }
+        }    
+
+    }
 }
 
-.card-image::before {
+.card-image::before{
   content: "";
   position: absolute;
   top: 0;
@@ -234,104 +415,6 @@ h1 {
   pointer-events: none; /* Allow clicks to pass through to content */
 }
 
-.soloterrare-card .card-overlay {
-    background: linear-gradient(to top, rgba(0, 0, 0, 01) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%);
-}
-.card-overlay {
-      z-index: 10;
-    position: absolute;
-    justify-content: space-between;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 20%, transparent 100%);
-    padding: 16px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-
-    .card-index {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        color: var(--text-h);
-        font-weight: bold;
-        font-size: 0.9rem;
-        z-index: 10;
-    }
-
-    .toggle-container {
-        position: absolute;
-        top: 80px;
-        right: 15px;
-        z-index: 10;
-        display:flex;
-        flex-direction: column;
-    }
-
-    .card-name, .card-name.overlay-effect {
-        width:100%;
-        text-align: center;
-        font-size: 1.6rem;
-        font-weight: bold;
-        color: var(--yellow-0);
-        font-family: "Alagard", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        letter-spacing:0.05em;
-        border-left: var(--decoration-name);
-        border-right: var(--decoration-name);
-        background:rgba(0, 0, 0, 0.6);
-    }
-   
-
-
-    .overlay-effect {
-        font-size: 1rem;
-        line-height: 1.1;
-        padding: 4px 8px;
-        background: var(--card-bg);
-        border-radius: 8px;
-        border-left: var(--decoration-effect);
-        border-right: var(--decoration-effect);
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-        letter-spacing:0.02em;
-    }
-        /* Soloterrare specific styles */
-    .overlay-effect.solo {
-        font-style: italic;
-        border-left: var(--decoration-flavour);
-        border-right: var(--decoration-flavour);
-        color: var(--text-l);
-    }
-
-    .overlay-effect.ability {
-        border-left: var(--decoration-ability);
-        border-right: var(--decoration-ability);
-    }
-
-    .overlay-effect.critical {
-        border-left: var(--decoration-critical);
-        border-right: var(--decoration-critical);
-       
-
-    }
-
-    .contents{
-
-        .content-section {
-            display: none;
-            flex-direction: column;
-            letter-spacing:0.02em;
-            gap: 4px;
-        }
-
-        .content-section.active {
-            display: flex;
-        }
-    }    
-
-}
 
 
 
@@ -371,8 +454,6 @@ h1 {
     color: var(--color-effect);
 }
 .soloterrare-stats {
-   /*  display:grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     width:100%;
     display:flex;
     gap: 2px;
