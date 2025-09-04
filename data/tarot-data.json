@@ -185,7 +185,7 @@
         {
             "name": "Justice",
             "index": 10,
-            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar10.jpg",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar11.jpg",
             "effects": {
                 "regular": "Remove this Tarot and another Tarot in play.",
                 "southern": "Withdrawal for perspective, seeking truth",
@@ -203,7 +203,7 @@
         {
             "name": "The Hanged Man",
             "index": 11,
-            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar11.jpg",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar12.jpg",
             "effects": {
                 "regular": "Discard your current played hand and play a new hand face-up.",
                 "southern": "Withdrawal for perspective, seeking truth",
@@ -213,7 +213,7 @@
         {
             "name": "Death",
             "index": 12,
-            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar12.jpg",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/ar13.jpg",
             "effects": {
                 "regular": "Choose a suit. Cards of the chosen suit do not score this round, their multipliers are not added, and they do not count towards their played hands.",
                 "southern": "Withdrawal for perspective, seeking truth",

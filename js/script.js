@@ -87,8 +87,8 @@ function createSoloterrareCardHTML(card) {
             <div class="card-overlay">
                 <div class="card-name">${card.name}
                     <div class="toggle-container">
-                        <button class="toggle-btn active" data-card="${cardId}" data-target="abilities">Abilities</button>      
-                        <button class="toggle-btn" data-card="${cardId}" data-target="activation">Activation</button>
+                        <button class="toggle-btn active" data-card="${cardId}" data-target="abilities">Enemy</button>      
+                        <button class="toggle-btn" data-card="${cardId}" data-target="activation">Item</button>
                     </div>
                 </div>
                 
@@ -105,15 +105,7 @@ function createSoloterrareCardHTML(card) {
                         <div class="overlay-effect ability">
                             <div><span class="title">Forlorn: </span>${stats.forlorn}</div>
                         </div>
-                    </div>
-                    
-                    <!-- Activation section with unique ID -->
-                    <div id="${cardId}-activation" class="content-section overlay-effect">
-                        <div class="title">Activation:</div>
-                        <div>${stats.activation}</div>
-                    </div>
-                    
-                    <div class="soloterrare-stats">
+                        <div class="soloterrare-stats">
                         <div class="stat attack">
                             <div class="stat-value">${stats.attack}</div>
                             <div class="stat-label">Attack</div>
@@ -127,6 +119,14 @@ function createSoloterrareCardHTML(card) {
                             <div class="stat-label">Chips</div>
                         </div>
                     </div>
+                    </div>
+                    
+                    <!-- Activation section with unique ID -->
+                    <div id="${cardId}-activation" class="content-section activation overlay-effect">
+                        <div><span class="title">Activation: </span>${stats.activation}</div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
