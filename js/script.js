@@ -177,7 +177,7 @@ function createSoloterrareCardHTML(card) {
                 <div class="contents">
                     <!-- Abilities section with unique ID -->
                     <div id="${cardId}-abilities" class="content-section  active">
-                        <div class="overlay-effect pixelated-border solo">${card.effects[currentDeck]}</div>
+                        <div class="overlay-effect pixel-rounded solo">${card.effects[currentDeck]}</div>
                         <div class="overlay-effect critical">
                             <div><span class="title">Critical: </span>${stats.critical}</div>
                         </div>
