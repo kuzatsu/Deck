@@ -19,7 +19,6 @@
                 "forlorn": "Take the rightmost played Tarot and place it next to the Jester in combat",
                 "activation": "Remove all Tarot in play (not including the monsters). Then put a Tarot from your hand into play with The Fool under it. When that Tarot activates, it activates twice. It cannot be removed or stolen."
             }
-            
         },
         {
             "name": "The Magician",
@@ -67,7 +66,7 @@
             "effects": {
                 "regular": "Destroy all cards with rank lower than 4. Does not count Aces.",
                 "southern": "Stitch each king in each played hand onto each queen in each played hand. Each queen may only receive one king each and you decide how they are distributed.",
-              "soloterrare": "A bloodied royal figure, her dress seeping with so much blood it looks scarlet. Her face is forlorn and sad as she slashes at you with a simple kitchen knife."
+                "soloterrare": "A bloodied royal figure, her dress seeping with so much blood it looks scarlet. Her face is forlorn and sad as she slashes at you with a simple kitchen knife."
             },
             "soloterrareStats": {
                 "attack": 10,
@@ -105,7 +104,7 @@
             "effects": {
                 "regular": "Multiply the multiplier by 4 if cards in your played hand add up to exactly 21 after calculation (not counting buffs).",
                 "southern": "Destroy each face card and remove this tarot.",
-                "soloterrare": "A long snake slithers down the corridor, its eyes milky white and a mouth that splits much further down its body than it should."            
+                "soloterrare": "A long snake slithers down the corridor, its eyes milky white and a mouth that splits much further down its body than it should."
             },
             "soloterrareStats": {
                 "attack": 10,
@@ -114,7 +113,7 @@
                 "critical": "Choose a played card. It gets a -10 BUFF. If this brings it below its face value its destroyed.",
                 "forlorn": "Shuffle all played cards back into the deck.",
                 "activation": "Choose a Suit. Buff each card of the chosen suit by +10. Shuffle any cards buffed back into the deck during refresh."
-        }
+            }
         },
         {
             "name": "The Lovers",
@@ -124,7 +123,7 @@
             "effects": {
                 "regular": "The next Flush or Straight you play only needs 4 cards instead of 5.",
                 "southern": "The next straight you score can skip up to 1 rank. (E.g. a straight can be 2, 4, 5, 7, 9.)",
-                "soloterrare": "A pair of bodies, twisted and knotted in a shared hell of flesh. Their mouths seem to be locked in an eternal kiss as they feel blindly along the corridor."            
+                "soloterrare": "A pair of bodies, twisted and knotted in a shared hell of flesh. Their mouths seem to be locked in an eternal kiss as they feel blindly along the corridor."
             },
             "soloterrareStats": {
                 "attack": 200,
@@ -143,7 +142,7 @@
             "effects": {
                 "regular": "Choose a player. Cards scored by them count towards your score this turn. Also, any buffs and multipliers on them are added to your hand value this turn. Give The Chariot to that player if you win.",
                 "southern": "This turn a winner is not decided, however each hand is still scored. Player’s set aside their score and add the result to the next round’s result. Remove this tarot.",
-                "soloterrare": "A man fused with a set of 4 wheels, his face blindfolded and several spikes lanced through him, he screams as he races down the corridors, spearing anything in his way."            
+                "soloterrare": "A man fused with a set of 4 wheels, his face blindfolded and several spikes lanced through him, he screams as he races down the corridors, spearing anything in his way."
             },
             "soloterrareStats": {
                 "attack": 500,
@@ -162,8 +161,8 @@
             "effects": {
                 "regular": "If you score a Flush this turn, double the multiplier after determining multiplier.",
                 "southern": "Buff each card in your played hand by its card value.",
-                "soloterrare": "A mass of muscles, the head of whatever they belong to lost amongst the flesh and veins. The rippling torso punches its way down the corridor, leaving splatters of blood from broken knuckles."            
-            },  
+                "soloterrare": "A mass of muscles, the head of whatever they belong to lost amongst the flesh and veins. The rippling torso punches its way down the corridor, leaving splatters of blood from broken knuckles."
+            },
             "soloterrareStats": {
                 "attack": 1000,
                 "defence": 0,
@@ -181,12 +180,12 @@
             "effects": {
                 "regular": "If you score a High Card this turn, triple the multiplier after determining multiplier.",
                 "southern": "Destroy all cards but one in your played hand. Add x30 to your hands multiplier this round.",
-                "soloterrare": "A shuffling man, covered in a cloak he leers out from under it, flinging knives with deadly precision."            
+                "soloterrare": "A shuffling man, covered in a cloak he leers out from under it, flinging knives with deadly precision."
             },
             "soloterrareStats": {
                 "attack": 50,
-                "defence":20,
-                "chips":"900",
+                "defence": 20,
+                "chips": "900",
                 "critical": "Destroy the highest value played card (you choose on a draw) and give the hermit 50 chips.",
                 "forlorn": "Turn the hermit facedown, this monster cannot be attacked until turned face up nor does it turn face up in the refresh phase. You may choose to destroy a card in a played hand during your combat phase to flip the hermit face up.",
                 "activation": "Choose a played card, if it attacks alone this turn, treat the monster’s DEFENCE as 0."
@@ -200,7 +199,7 @@
             "effects": {
                 "regular": "Fast. Each opponent gives you a card to be added to your main hand from their main hand at random.",
                 "southern": "Starting with you each player may bid an amount of chips. Bidding continues until a winner is decided. The winner loses the chips they bidded and takes half that many chips rounded up from each other player.",
-                "soloterrare": "A series of screaming faces, impaled to the inside of a spiked wheel that rolls down the corridor dark corridors."            
+                "soloterrare": "A series of screaming faces, impaled to the inside of a spiked wheel that rolls down the corridor dark corridors."
             },
             "soloterrareStats": {
                 "attack": 300,
@@ -219,7 +218,7 @@
             "effects": {
                 "regular": "Remove this Tarot and another Tarot in play.",
                 "southern": "Whenever a tarot is activated after this tarot it is removed. (It still activates.)",
-               "soloterrare": "A woman in a white gown, her eyes sewn shut and her screams shrill as she feels her way along, attacking anything she reaches."            
+                "soloterrare": "A woman in a white gown, her eyes sewn shut and her screams shrill as she feels her way along, attacking anything she reaches."
             },
             "soloterrareStats": {
                 "attack": 100,
@@ -238,12 +237,12 @@
             "effects": {
                 "regular": "Discard your current played hand and play a new hand face-up.",
                 "southern": "Discard all tarot but this tarot. Put that many tarot into play in front of you from the top of the tarot deck.",
-                "soloterrare": "A man, wrapped up wires and pipes that extend from its skin, he hangs from a rail set into the ceiling. As he races down the corridor, his metallic mouth gnashes and grinds."            
+                "soloterrare": "A man, wrapped up wires and pipes that extend from its skin, he hangs from a rail set into the ceiling. As he races down the corridor, his metallic mouth gnashes and grinds."
             },
             "soloterrareStats": {
                 "attack": 40,
-                "defence":80,
-                "chips":"600",
+                "defence": 80,
+                "chips": "600",
                 "critical": "Turn 3 played cards of your choice upside down. Upside down cards cannot attack but can block.",
                 "forlorn": "Turn a played card of your choice upside down. Upside down cards cannot attack but can block.",
                 "activation": "After the combat phase this turn, discard all played cards and replace each one with a card in your hand."
@@ -257,7 +256,7 @@
             "effects": {
                 "regular": "Choose a suit. Cards of the chosen suit do not score this round, their multipliers are not added, and they do not count towards their played hands.",
                 "southern": "The winner this round may choose to forfeit stealing a card from a player this round to take an extra 100 chips.",
-                "soloterrare": "A mass of black cloaks and hands, crawling and scuttling along the walls. The sound of wind is the only sound it seems to make."            
+                "soloterrare": "A mass of black cloaks and hands, crawling and scuttling along the walls. The sound of wind is the only sound it seems to make."
             },
             "soloterrareStats": {
                 "attack": 400,
@@ -266,7 +265,7 @@
                 "critical": "Destroy the top 10 cards of your deck.",
                 "forlorn": "Lose 100 chips and give them to death.",
                 "activation": "Choose a minor arcana monster and take all that monster’s chips. Then remove death and put it into tarot discard."
-            }   
+            }
         },
         {
             "name": "Temperance",
@@ -276,12 +275,12 @@
             "effects": {
                 "regular": "Trade this Tarot with a non-activated Tarot in play.",
                 "southern": "If your chips would be reduced to 0 this round, instead remove this tarot and make your chips 100.",
-               "soloterrare": "A white robed angel like creature. Gliding across the ground it seems to sing with a choir of many voices, burning those it touches without fire."            
+                "soloterrare": "A white robed angel like creature. Gliding across the ground it seems to sing with a choir of many voices, burning those it touches without fire."
             },
             "soloterrareStats": {
                 "attack": 50,
-                "defence":250,
-                "chips":"800",
+                "defence": 250,
+                "chips": "800",
                 "critical": "Buff each card in your played hand by +10.",
                 "forlorn": "Destroy all cards in your played hand with value 10+.",
                 "activation": "Buff each card in your played hand by +10 then put temperance into your secondary hand."
@@ -295,7 +294,7 @@
             "effects": {
                 "regular": "Double the score of each card in your played hand this turn. This turn, if you lose, the opponent gains double your chips.",
                 "southern": "Multiply the multiplier of your hand value by 10. If you lose this round, choose a player to receive this tarot and all your chips.",
-                "soloterrare": "A red skinned creature, covered in faces and hanging from the ceiling by long, ape-like limbs."            
+                "soloterrare": "A red skinned creature, covered in faces and hanging from the ceiling by long, ape-like limbs."
             },
             "soloterrareStats": {
                 "attack": 250,
@@ -314,7 +313,7 @@
             "effects": {
                 "regular": "Choose a card in play. Each time a tarot is activated after this give that card +10. If you activate another tarot this turn, destroy that card.",
                 "southern": "Place a tarot under this tarot. When this tarot is activated, activate each tarot underneath it. If this tarot is removed, remove all tarot underneath it.",
-                "soloterrare": "A large shuffling mass of flesh, many limbs and mouths pulling a cylinder of grotesque down the tight corridor. It moans and leaves a trail of lymph as it goes."            
+                "soloterrare": "A large shuffling mass of flesh, many limbs and mouths pulling a cylinder of grotesque down the tight corridor. It moans and leaves a trail of lymph as it goes."
             },
             "soloterrareStats": {
                 "attack": "x",
@@ -333,7 +332,7 @@
             "effects": {
                 "regular": "This scoring phase, clubs/spades are the same and all diamonds/hearts are the same.",
                 "southern": "At the beginning of scoring, half the multiplier of each hand value’s multiplier rounded down.",
-                "soloterrare": "A mass of tentacles, suspending a bulbous eye from the walls. It snaps and slashes at anything it can see."            
+                "soloterrare": "A mass of tentacles, suspending a bulbous eye from the walls. It snaps and slashes at anything it can see."
             },
             "soloterrareStats": {
                 "attack": 100,
@@ -352,12 +351,12 @@
             "effects": {
                 "regular": "Buff one card you have played by +30 and one card an opponent has played.",
                 "southern": "Choose a rank, buff each card in each played hand by +30 of the chosen rank.",
-                "soloterrare": "A large veiny ball of flesh, taunt and pulsing it contains several eyes just below the surface as it rolls down the corridors."            
+                "soloterrare": "A large veiny ball of flesh, taunt and pulsing it contains several eyes just below the surface as it rolls down the corridors."
             },
             "soloterrareStats": {
                 "attack": 50,
-                "defence":100,
-                "chips":"800",
+                "defence": 100,
+                "chips": "800",
                 "critical": "Remove the last 2 activated tarot this turn.",
                 "forlorn": "Remove a random tarot from your secondary hand.",
                 "activation": "Attacked cards can block this turn. Put this tarot back into your secondary hand."
@@ -371,7 +370,7 @@
             "effects": {
                 "regular": "Destroy one card you have played and one card an opponent has played of the same suit or rank.",
                 "southern": "Choose a card in a played hand. Change that card to a 0. A 0 does not count towards a straight  (but can be counted in pair, four of a kind, etc if more than one 0 is involved.) The card value of a 0 is 0.",
-               "soloterrare": "A spiked ball of flesh, covered in golden hair that tangle it across the corridors and covered in eyes and teeth."            
+                "soloterrare": "A spiked ball of flesh, covered in golden hair that tangle it across the corridors and covered in eyes and teeth."
             },
             "soloterrareStats": {
                 "attack": 150,
@@ -390,8 +389,8 @@
             "effects": {
                 "regular": "Pick a suit. Buff all cards of the chosen suit by +10.",
                 "southern": "Put all cards in all played hands face-down. Shuffle them and distribute them back to each player one at a time in player order until each player has a new played hand. Then turn them all face-up.",
-               "soloterrare": "A rolling iron maiden, painted with a smiling face and carrying two chained blades that it swings about it."            
-},
+                "soloterrare": "A rolling iron maiden, painted with a smiling face and carrying two chained blades that it swings about it."
+            },
             "soloterrareStats": {
                 "attack": 300,
                 "defence": 300,
@@ -409,7 +408,7 @@
             "effects": {
                 "regular": "Shuffle all played hands, discard and tarot back into their respective decks. End the round without a winner. Then remove the world (not literally.)",
                 "southern": "Each player trades tarot with the player to their right. Activated and non-activated tarot remain as they were.",
-               "soloterrare": "An oppressive feeling, causing internal bleeding and teeth to fall out."            
+                "soloterrare": "An oppressive feeling, causing internal bleeding and teeth to fall out."
             },
             "soloterrareStats": {
                 "attack": 2,
@@ -587,13 +586,13 @@
                 "coulette": "Rapid action, movement, quick decisions, air travel",
                 "soloterrare": "Eight staffs flying through the air, guided by unseen blind hands toward unseen targets."
             },
-                "soloterrareStats": {
-                    "attack": 80,
-                    "defence": 160,
-                    "chips": 800,
-                    "critical": "Change a card of your choice into a 2.",
-                    "forlorn": "Change a card of your choice into a 8.",
-                    "activation": "Destroy a 8 in your primary hand. Change any card in your played hand into a 8."
+            "soloterrareStats": {
+                "attack": 80,
+                "defence": 160,
+                "chips": 800,
+                "critical": "Change a card of your choice into a 2.",
+                "forlorn": "Change a card of your choice into a 8.",
+                "activation": "Destroy a 8 in your primary hand. Change any card in your played hand into a 8."
             }
         },
         {
@@ -653,7 +652,7 @@
                 "coulette": "Exploration, discovery, enthusiasm, message",
                 "soloterrare": "A sad looking wizard, long blue robes frame a face of smooth skin, removed by some magical ability. He advances, tapping things with a sharpened wand."
             },
-                "soloterrareStats": {
+            "soloterrareStats": {
                 "attack": 80,
                 "defence": 100,
                 "chips": 400,
@@ -675,7 +674,7 @@
                 "coulette": "Action, adventure, impulsiveness, travel",
                 "soloterrare": "A gaunt blind man, riding a snarling greyhound. He swings at the walls with a long spiked club."
             },
-                "soloterrareStats": {
+            "soloterrareStats": {
                 "attack": 90,
                 "defence": 90,
                 "chips": 400,
@@ -697,7 +696,7 @@
                 "coulette": "Confidence, determination, warmth, vibrancy",
                 "soloterrare": "A thin, frail woman with long gray hair. Her eyes are milky blind and her long fingers grip a short wand as she fires strange magics into the darkness."
             },
-                "soloterrareStats": {
+            "soloterrareStats": {
                 "attack": 50,
                 "defence": 50,
                 "chips": 300,
@@ -719,7 +718,7 @@
                 "coulette": "Leadership, vision, entrepreneurship, honor",
                 "soloterrare": "A mad old man, his beard long and full of spiders as he cackles and whacks the walls with a long stick. Atop his head is a thorned crown, blood dripping through his beard, painting it a dark red."
             },
-                "soloterrareStats": {
+            "soloterrareStats": {
                 "attack": 70,
                 "defence": 45,
                 "chips": 500,
@@ -727,10 +726,930 @@
                 "forlorn": "Change all kings into 2s.",
                 "activation": "Destroy a King in your primary hand. Change any card in your played hand into a king."
             }
+        },
+        {
+            "name": "Ace of Cups",
+            "index": 36,
+            "type": "minor",
+            "suit": "cups",
+            "value": "ace",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cuac.jpg",
+            "effects": {
+                "regular": "Destroy the top 11 cards of your deck. For each Ace destroyed, remove 3 tarot, then remove this tarot. If no Aces were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any Ace in another player's played hand with an Ace in your played hand.",
+                "coulette": "Emotional fulfillment, intuition, love, compassion",
+                "soloterrare": "Rather than float, this creature crawls on all fours, a metal bowl covering its back. It scratches at your legs with long claws."
+            },
+            "soloterrareStats": {
+                "attack": 10,
+                "defence": 225,
+                "chips": 400,
+                "critical": "Search the discard for the top most cup and put it into combat as a monster.",
+                "forlorn": "The ace of cups gets +100 defence during the next combat. It does not attack during the next retaliation phase.",
+                "activation": "Destroy an ace in your hand. Swap the top card of the discard deck with the current monster. Change the monster's chips accordingly. You cannot activate this tarot for the rest of the battle."
+            }
+        },
+        {
+            "name": "Two of Cups",
+            "index": 37,
+            "type": "minor",
+            "suit": "cups",
+            "value": "two",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cu02.jpg",
+            "effects": {
+                "regular": "Destroy the top 2 cards of your deck. For each two destroyed, remove a tarot, then remove this tarot. If no twos were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any 2 in another player's played hand with an 2 in your played hand.",
+                "coulette": "Partnership, connection, mutual attraction, union",
+                "soloterrare": "Two spindly creatures floating in interconnected bowls, their long fingers intertwining as they scratch at the air."
+            },
+            "soloterrareStats": {
+                "attack": 30,
+                "defence": 50,
+                "chips": 200,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be turned face up and do nothing when activated.",
+                "forlorn": "Turn a card of rank 2 facedown. Facedown cards have a face value of 1.",
+                "activation": "Destroy a 2 in your hand. Reactivate a non-cup tarot of your choice."
+            }
+        },
+        {
+            "name": "Three of Cups",
+            "index": 38,
+            "type": "minor",
+            "suit": "cups",
+            "value": "three",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cu03.jpg",
+            "effects": {
+                "regular": "Destroy the top 3 cards of your deck. For each three destroyed, remove a tarot, then remove this tarot. If no threes were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any 3 in another player's played hand with an 3 in your played hand.",
+                "coulette": "Celebration, friendship, community, joyous occasions",
+                "soloterrare": "Three spindly creatures in floating bowls, forming a circle with their long limbs as they scratch celebratory patterns in the air."
+            },
+            "soloterrareStats": {
+                "attack": 45,
+                "defence": 75,
+                "chips": 300,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be turned face up and do nothing when activated.",
+                "forlorn": "Turn a card of rank 3 facedown. Facedown cards have a face value of 1.",
+                "activation": "Destroy a 3 in your hand. Reactivate a non-cup tarot of your choice."
+            }
+        },
+        {
+            "name": "Four of Cups",
+            "index": 39,
+            "type": "minor",
+            "suit": "cups",
+            "value": "four",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cu04.jpg",
+            "effects": {
+                "regular": "Destroy the top 4 cards of your deck. For each four destroyed, remove a tarot, then remove this tarot. If no fours were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any 4 in another player's played hand with an 4 in your played hand.",
+                "coulette": "Contemplation, apathy, reevaluation, withdrawal",
+                "soloterrare": "Four spindly creatures sitting motionless in their bowls, their large eyes staring blankly as their fingers twitch occasionally."
+            },
+            "soloterrareStats": {
+                "attack": 60,
+                "defence": 100,
+                "chips": 400,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be turned face up and do nothing when activated.",
+                "forlorn": "Turn a card of rank 4 facedown. Facedown cards have a face value of 1.",
+                "activation": "Destroy a 4 in your hand. Reactivate a non-cup tarot of your choice."
+            }
+        },
+        {
+            "name": "Five of Cups",
+            "index": 40,
+            "type": "minor",
+            "suit": "cups",
+            "value": "five",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cu05.jpg",
+            "effects": {
+                "regular": "Destroy the top 5 cards of your deck. For each five destroyed, remove a tarot, then remove this tarot. If no fives were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any 5 in another player's played hand with an 5 in your played hand.",
+                "coulette": "Loss, regret, disappointment, grief",
+                "soloterrare": "Five spindly creatures huddled together, their bowls cracked and leaking as they mournfully scratch at the remnants."
+            },
+            "soloterrareStats": {
+                "attack": 75,
+                "defence": 125,
+                "chips": 500,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be turned face up and do nothing when activated.",
+                "forlorn": "Turn a card of rank 5 facedown. Facedown cards have a face value of 1.",
+                "activation": "Destroy a 5 in your hand. Reactivate a non-cup tarot of your choice."
+            }
+        },
+        {
+            "name": "Six of Cups",
+            "index": 41,
+            "type": "minor",
+            "suit": "cups",
+            "value": "six",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cu06.jpg",
+            "effects": {
+                "regular": "Destroy the top 6 cards of your deck. For each six destroyed, remove a tarot, then remove this tarot. If no sixes were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any 6 in another player's played hand with an 6 in your played hand.",
+                "coulette": "Nostalgia, memories, childhood, innocence",
+                "soloterrare": "Six spindly creatures playing together, their bowls clinking as they gently scratch nostalgic patterns on each other's surfaces."
+            },
+            "soloterrareStats": {
+                "attack": 90,
+                "defence": 150,
+                "chips": 600,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be turned face up and do nothing when activated.",
+                "forlorn": "Turn a card of rank 6 facedown. Facedown cards have a face value of 1.",
+                "activation": "Destroy a 6 in your hand. Reactivate a non-cup tarot of your choice."
+            }
+        },
+        {
+            "name": "Seven of Cups",
+            "index": 42,
+            "type": "minor",
+            "suit": "cups",
+            "value": "seven",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cu07.jpg",
+            "effects": {
+                "regular": "Destroy the top 7 cards of your deck. For each seven destroyed, remove a tarot, then remove this tarot. If no sevens were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any 7 in another player's played hand with an 7 in your played hand.",
+                "coulette": "Choices, illusions, fantasy, options",
+                "soloterrare": "Seven spindly creatures each offering different bowls filled with illusions, their long fingers creating mesmerizing patterns."
+            },
+            "soloterrareStats": {
+                "attack": 105,
+                "defence": 175,
+                "chips": 700,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be turned face up and do nothing when activated.",
+                "forlorn": "Turn a card of rank 7 facedown. Facedown cards have a face value of 1.",
+                "activation": "Destroy a 7 in your hand. Reactivate a non-cup tarot of your choice."
+            }
+        },
+        {
+            "name": "Eight of Cups",
+            "index": 43,
+            "type": "minor",
+            "suit": "cups",
+            "value": "eight",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cu08.jpg",
+            "effects": {
+                "regular": "Destroy the top 8 cards of your deck. For each eight destroyed, remove a tarot, then remove this tarot. If no eights were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any 8 in another player's played hand with an 8 in your played hand.",
+                "coulette": "Abandonment, withdrawal, search for meaning, disillusionment",
+                "soloterrare": "Eight spindly creatures leaving their bowls behind, crawling away with determined scratching motions toward an unseen destination."
+            },
+            "soloterrareStats": {
+                "attack": 120,
+                "defence": 200,
+                "chips": 800,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be turned face up and do nothing when activated.",
+                "forlorn": "Turn a card of rank 8 facedown. Facedown cards have a face value of 1.",
+                "activation": "Destroy a 8 in your hand. Reactivate a non-cup tarot of your choice."
+            }
+        },
+        {
+            "name": "Nine of Cups",
+            "index": 44,
+            "type": "minor",
+            "suit": "cups",
+            "value": "nine",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cu09.jpg",
+            "effects": {
+                "regular": "Destroy the top 9 cards of your deck. For each nine destroyed, remove a tarot, then remove this tarot. If no nines were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any 9 in another player's played hand with an 9 in your played hand.",
+                "coulette": "Contentment, satisfaction, wishes fulfilled, emotional stability",
+                "soloterrare": "Nine spindly creatures lounging contentedly in overflowing bowls, gently scratching satisfied patterns in the air."
+            },
+            "soloterrareStats": {
+                "attack": 135,
+                "defence": 225,
+                "chips": 900,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be turned face up and do nothing when activated.",
+                "forlorn": "Turn a card of rank 9 facedown. Facedown cards have a face value of 1.",
+                "activation": "Destroy a 9 in your hand. Reactivate a non-cup tarot of your choice."
+            }
+        },
+        {
+            "name": "Ten of Cups",
+            "index": 45,
+            "type": "minor",
+            "suit": "cups",
+            "value": "ten",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cu10.jpg",
+            "effects": {
+                "regular": "Destroy the top 10 cards of your deck. For each ten destroyed, remove 2 tarot, then remove this tarot. If no tens were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any 10 in another player's played hand with an 10 in your played hand.",
+                "coulette": "Harmony, family, happiness, alignment",
+                "soloterrare": "Ten spindly creatures in a perfect circle of floating bowls, their long fingers creating harmonious scratching patterns in unison."
+            },
+            "soloterrareStats": {
+                "attack": 150,
+                "defence": 250,
+                "chips": 1000,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be turned face up and do nothing when activated.",
+                "forlorn": "Turn a card of rank 10 facedown. Facedown cards have a face value of 1.",
+                "activation": "Destroy a 10 in your hand. Reactivate a non-cup tarot of your choice."
+            }
+        },
+        {
+            "name": "Page of Cups",
+            "index": 46,
+            "type": "minor",
+            "suit": "cups",
+            "value": "page",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cupa.jpg",
+            "effects": {
+                "regular": "Choose a rank. Destroy the top 10 cards of your deck. For each card of the chosen rank destroyed, remove 2 tarot, then remove this tarot. If no cards of the chosen rank were destroyed, do not remove this or any other tarot.",
+                "southern": "Choose a card in a played hand. Trade it with a card in your played hand.",
+                "coulette": "Creative opportunities, intuitive messages, curiosity, new feelings",
+                "soloterrare": "A spindly, bug eyed creature with a striped red and blue outfit. Its body is dotted with small bells that jingle as it swings from the rafters with sharp claws, carrying a heavy metal bowl with its legs."
+            },
+            "soloterrareStats": {
+                "attack": 30,
+                "defence": 80,
+                "chips": 500,
+                "critical": "During the next turn no played cards may block or attack.",
+                "forlorn": "During the next combat phase, all cards must attack.",
+                "activation": "Look at the top 3 cards of the monster deck, put them back in the same order."
+            }
+        },
+        {
+            "name": "Knight of Cups",
+            "index": 47,
+            "type": "minor",
+            "suit": "cups",
+            "value": "knight",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cukn.jpg",
+            "effects": {
+                "regular": "Destroy the top 10 cards of your deck. For each Jack destroyed, remove 2 tarot, then remove this tarot. If no Jacks were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any Jack in another player's played hand with an Jack in your played hand.",
+                "coulette": "Romance, charm, imagination, following one's heart",
+                "soloterrare": "A spindly creature wielding a sword much larger than it. It uses a heavy metal bowl as a shield as it swings the sword erratically."
+            },
+            "soloterrareStats": {
+                "attack": 225,
+                "defence": 0,
+                "chips": 400,
+                "critical": "Give the monster what it just dealt in damage in chips.",
+                "forlorn": "The monster gets +225 defence next combat phase.",
+                "activation": "Destroy a card in your hand to steal 10 chips from any monster."
+            }
+        },
+        {
+            "name": "Queen of Cups",
+            "index": 48,
+            "type": "minor",
+            "suit": "cups",
+            "value": "queen",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cuqu.jpg",
+            "effects": {
+                "regular": "Destroy the top 10 cards of your deck. For each Queen destroyed, remove 2 tarot, then remove this tarot. If no queens were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any Queen in another player's played hand with an Queen in your played hand.",
+                "coulette": "Compassion, emotional security, intuition, nurturing",
+                "soloterrare": "A bug-eyed spindly creature sitting in an upturned bowl. It has long spindly limbs and big eyelashes. The bowl is being carried by two smaller creatures that struggle under its weight."
+            },
+            "soloterrareStats": {
+                "attack": 8,
+                "defence": 8,
+                "chips": 550,
+                "critical": "This monster steals an extra 100 chips.",
+                "forlorn": "Search discard, shop, your hand and your played tarot for the king of cups. If you find it, put it into battle as a monster alongside the queen of cups. Give it CHIPS accordingly.",
+                "activation": "Destroy a queen in your hand or in play. Turn a monster facedown. Facedown monsters cannot attack or be attacked and they turn face up on the refresh phase."
+            }
+        },
+        {
+            "name": "King of Cups",
+            "index": 49,
+            "type": "minor",
+            "suit": "cups",
+            "value": "king",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/cuki.jpg",
+            "effects": {
+                "regular": "Destroy the top 10 cards of your deck. For each king destroyed, remove 2 tarot, then remove this tarot. If no kings were destroyed, do not remove this or any other tarot.",
+                "southern": "Trade any King in another player's played hand with an King in your played hand.",
+                "coulette": "Emotional balance, compassion, diplomacy, control",
+                "soloterrare": "A spindly creature, like a shaved monkey. It crawls along the walls and ceiling using its sharpened claws. Upon meeting somebody it screams, calling others of its kind to slash and tear."
+            },
+            "soloterrareStats": {
+                "attack": 50,
+                "defence": 50,
+                "chips": 600,
+                "critical": "Search the discard for the top most cup tarot and put it into battle as a monster.",
+                "forlorn": "If there is another monster in play, this monster gains 50 of its chips.",
+                "activation": "Destroy a king in hand, the next time a new monster would come into battle, put it into discard."
+            }
+        },
+        {
+            "name": "Ace of Swords",
+            "index": 50,
+            "type": "minor",
+            "suit": "swords",
+            "value": "ace",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/swac.jpg",
+            "effects": {
+                "regular": "Destroy target ace in any played hand. Then remove this tarot.",
+                "southern": "Stitch target ace in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Breakthrough, clarity, sharp mind, truth, justice",
+                "soloterrare": "A mass of limbs ending in swords, leading into a rotten torso of guts and blood. It walks on blade tips rather than feet, slicing at the walls of the corridor."
+            },
+            "soloterrareStats": {
+                "attack": 555,
+                "defence": 40,
+                "chips": 600,
+                "critical": "This monster steals double the chips.",
+                "forlorn": "Remove 50 of this monster's chips. They are not stolen by you.",
+                "activation": "Steal 11 chips from any monster."
+            }
+        },
+        {
+            "name": "Two of Swords",
+            "index": 51,
+            "type": "minor",
+            "suit": "swords",
+            "value": "two",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/sw02.jpg",
+            "effects": {
+                "regular": "Destroy target 2 in any played hand. Then remove this tarot.",
+                "southern": "Stitch target 2 in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Difficult decisions, stalemate, blocked emotions, truce",
+                "soloterrare": "A blinded creature with two grafted arms ending in serrated blades, standing motionless in a defensive stance."
+            },
+            "soloterrareStats": {
+                "attack": 100,
+                "defence": 20,
+                "chips": 100,
+                "critical": "Destroy the left most played card of rank 2. If you don't, destroy the left most played card.",
+                "forlorn": "Destroy the right most played card of rank 2. If you don't, destroy the right most played card.",
+                "activation": "Steal 2 chips from any monster."
+            }
+        },
+        {
+            "name": "Three of Swords",
+            "index": 52,
+            "type": "minor",
+            "suit": "swords",
+            "value": "three",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/sw03.jpg",
+            "effects": {
+                "regular": "Destroy target 3 in any played hand. Then remove this tarot.",
+                "southern": "Stitch target 3 in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Heartbreak, sorrow, grief, emotional pain",
+                "soloterrare": "A creature with three bladed arms, each slashing wildly in different directions, its face a mess of pulped tissue."
+            },
+            "soloterrareStats": {
+                "attack": 150,
+                "defence": 30,
+                "chips": 150,
+                "critical": "Destroy the left most played card of rank 3. If you don't, destroy the left most played card.",
+                "forlorn": "Destroy the right most played card of rank 3. If you don't, destroy the right most played card.",
+                "activation": "Steal 3 chips from any monster."
+            }
+        },
+        {
+            "name": "Four of Swords",
+            "index": 53,
+            "type": "minor",
+            "suit": "swords",
+            "value": "four",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/sw04.jpg",
+            "effects": {
+                "regular": "Destroy target 4 in any played hand. Then remove this tarot.",
+                "southern": "Stitch target 4 in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Rest, recovery, contemplation, meditation",
+                "soloterrare": "A creature lying still with four bladed arms crossed over its chest, as if in a tomb of blades."
+            },
+            "soloterrareStats": {
+                "attack": 200,
+                "defence": 40,
+                "chips": 200,
+                "critical": "Destroy the left most played card of rank 4. If you don't, destroy the left most played card.",
+                "forlorn": "Destroy the right most played card of rank 4. If you don't, destroy the right most played card.",
+                "activation": "Steal 4 chips from any monster."
+            }
+        },
+        {
+            "name": "Five of Swords",
+            "index": 54,
+            "type": "minor",
+            "suit": "swords",
+            "value": "five",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/sw05.jpg",
+            "effects": {
+                "regular": "Destroy target 5 in any played hand. Then remove this tarot.",
+                "southern": "Stitch target 5 in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Conflict, defeat, win at all costs, betrayal",
+                "soloterrare": "A victorious creature standing over defeated foes, five bladed arms raised triumphantly."
+            },
+            "soloterrareStats": {
+                "attack": 250,
+                "defence": 50,
+                "chips": 250,
+                "critical": "Destroy the left most played card of rank 5. If you don't, destroy the left most played card.",
+                "forlorn": "Destroy the right most played card of rank 5. If you don't, destroy the right most played card.",
+                "activation": "Steal 5 chips from any monster."
+            }
+        },
+        {
+            "name": "Six of Swords",
+            "index": 55,
+            "type": "minor",
+            "suit": "swords",
+            "value": "six",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/sw06.jpg",
+            "effects": {
+                "regular": "Destroy target 6 in any played hand. Then remove this tarot.",
+                "southern": "Stitch target 6 in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Transition, change, moving on, recovery",
+                "soloterrare": "A creature using six bladed arms as oars, moving through a corridor as if it were water."
+            },
+            "soloterrareStats": {
+                "attack": 300,
+                "defence": 60,
+                "chips": 300,
+                "critical": "Destroy the left most played card of rank 6. If you don't, destroy the left most played card.",
+                "forlorn": "Destroy the right most played card of rank 6. If you don't, destroy the right most played card.",
+                "activation": "Steal 6 chips from any monster."
+            }
+        },
+        {
+            "name": "Seven of Swords",
+            "index": 56,
+            "type": "minor",
+            "suit": "swords",
+            "value": "seven",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/sw07.jpg",
+            "effects": {
+                "regular": "Destroy target 7 in any played hand. Then remove this tarot.",
+                "southern": "Stitch target 7 in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Deception, trickery, tactics, avoidance",
+                "soloterrare": "A sneaky creature with seven bladed arms, some holding stolen goods while others prepare to strike."
+            },
+            "soloterrareStats": {
+                "attack": 350,
+                "defence": 70,
+                "chips": 350,
+                "critical": "Destroy the left most played card of rank 7. If you don't, destroy the left most played card.",
+                "forlorn": "Destroy the right most played card of rank 7. If you don't, destroy the right most played card.",
+                "activation": "Steal 7 chips from any monster."
+            }
+        },
+        {
+            "name": "Eight of Swords",
+            "index": 57,
+            "type": "minor",
+            "suit": "swords",
+            "value": "eight",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/sw08.jpg",
+            "effects": {
+                "regular": "Destroy target 8 in any played hand. Then remove this tarot.",
+                "southern": "Stitch target 8 in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Restriction, confusion, powerlessness, anxiety",
+                "soloterrare": "A trapped creature surrounded by eight floating blades that form a prison of sharp edges."
+            },
+            "soloterrareStats": {
+                "attack": 400,
+                "defence": 80,
+                "chips": 400,
+                "critical": "Destroy the left most played card of rank 8. If you don't, destroy the left most played card.",
+                "forlorn": "Destroy the right most played card of rank 8. If you don't, destroy the right most played card.",
+                "activation": "Steal 8 chips from any monster."
+            }
+        },
+        {
+            "name": "Nine of Swords",
+            "index": 58,
+            "type": "minor",
+            "suit": "swords",
+            "value": "nine",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/sw09.jpg",
+            "effects": {
+                "regular": "Destroy target 9 in any played hand. Then remove this tarot.",
+                "southern": "Stitch target 9 in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Anxiety, worry, fear, nightmares",
+                "soloterrare": "A tormented creature with nine bladed arms, some piercing its own body as it writhes in anguish."
+            },
+            "soloterrareStats": {
+                "attack": 450,
+                "defence": 90,
+                "chips": 450,
+                "critical": "Destroy the left most played card of rank 9. If you don't, destroy the left most played card.",
+                "forlorn": "Destroy the right most played card of rank 9. If you don't, destroy the right most played card.",
+                "activation": "Steal 9 chips from any monster."
+            }
+        },
+        {
+            "name": "Ten of Swords",
+            "index": 59,
+            "type": "minor",
+            "suit": "swords",
+            "value": "ten",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/sw10.jpg",
+            "effects": {
+                "regular": "Destroy target 10 in any played hand. Then remove this tarot.",
+                "southern": "Stitch target 10 in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Painful endings, deep wounds, betrayal, loss",
+                "soloterrare": "A defeated creature pierced by ten blades, its multiple arms limp and lifeless."
+            },
+            "soloterrareStats": {
+                "attack": 500,
+                "defence": 100,
+                "chips": 500,
+                "critical": "Destroy the left most played card of rank 10. If you don't, destroy the left most played card.",
+                "forlorn": "Destroy the right most played card of rank 10. If you don't, destroy the right most played card.",
+                "activation": "Steal 10 chips from any monster."
+            }
+        },
+        {
+            "name": "Page of Swords",
+            "index": 60,
+            "type": "minor",
+            "suit": "swords",
+            "value": "page",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/swpa.jpg",
+            "effects": {
+                "regular": "Destroy target club in any played hand. Then remove this tarot.",
+                "southern": "Stitch target card in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Curiosity, vigilance, truth-seeking, new ideas",
+                "soloterrare": "A ragged jester-like figure, its striped sleeves ending in curved blades and its blind rotten face covered by a scratched metal mask."
+            },
+            "soloterrareStats": {
+                "attack": 450,
+                "defence": 20,
+                "chips": 650,
+                "critical": "Destroy the right most played card and then this monster steals chips from you equal to the face value of the destroyed card.",
+                "forlorn": "Remove 10 of this monster's chips. They are not stolen by you.",
+                "activation": "Steal 10 chips from any monster. If the monster has over 500 chips, steal 30 chips instead."
+            }
+        },
+        {
+            "name": "Knight of Swords",
+            "index": 61,
+            "type": "minor",
+            "suit": "swords",
+            "value": "knight",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/swkn.jpg",
+            "effects": {
+                "regular": "Destroy target jack in any played hand. Then remove this tarot.",
+                "southern": "Stitch target Jack in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Action, impulsiveness, haste, asserting authority",
+                "soloterrare": "A knight, sporting a full suit of armour. Its armour is split at the back, revealing a series of long, segmented limbs ending in blades."
+            },
+            "soloterrareStats": {
+                "attack": 800,
+                "defence": 150,
+                "chips": 600,
+                "critical": "Destroy all played cards.",
+                "forlorn": "Remove 10 of this monster's chips. They are not stolen by you.",
+                "activation": "Steal 40 of any monster's chips."
+            }
+        },
+        {
+            "name": "Queen of Swords",
+            "index": 62,
+            "type": "minor",
+            "suit": "swords",
+            "value": "queen",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/swqu.jpg",
+            "effects": {
+                "regular": "Destroy target queen in any played hand. Then remove this tarot.",
+                "southern": "Stitch target Queen in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Clarity, truth, independence, honest communication",
+                "soloterrare": "A tall beautiful lady, her shoulders hunched to fit into the tight corridor. Instead of fingers, each digit ends in a razor thin blade. Her face is covered in blood, hiding her features."
+            },
+            "soloterrareStats": {
+                "attack": 400,
+                "defence": 100,
+                "chips": 700,
+                "critical": "Destroy the left most and the right most played cards.",
+                "forlorn": "Remove 10 of this monster's chips. They are not stolen by you.",
+                "activation": "Steal 20 of any monster's chips."
+            }
+        },
+        {
+            "name": "King of Swords",
+            "index": 63,
+            "type": "minor",
+            "suit": "swords",
+            "value": "king",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/swki.jpg",
+            "effects": {
+                "regular": "Destroy target king in any played hand. Then remove this tarot.",
+                "southern": "Stitch target King in another player's played hand onto a card in your hand. Remove this tarot.",
+                "coulette": "Authority, truth, leadership, clear thinking",
+                "soloterrare": "A tall, gaunt man, his face slashed down to the bone, revealing a pair of unblinking, milky eyeballs. His back is covered in limbs ending in blades and a tall, iron crown sits atop his visceral head."
+            },
+            "soloterrareStats": {
+                "attack": 350,
+                "defence": 100,
+                "chips": 800,
+                "critical": "Destroy any cards that came into play this turn.",
+                "forlorn": "Remove 20 of this monster's chips. They are not stolen by you.",
+                "activation": "Steal 20 of any monster's chips."
+            }
+        },
+        {
+            "name": "Ace of Pentacles",
+            "index": 64,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "ace",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/peac.jpg",
+            "effects": {
+                "regular": "Add x11 to any one ace in a played hand.",
+                "southern": "Decrease the rank of any Ace in a played hand by 1.",
+                "coulette": "Opportunity, prosperity, new financial beginning",
+                "soloterrare": "A series of bulbous hands from a central mass, mouths on each fat finger tip, gnashing and gnawing at the air."
+            },
+            "soloterrareStats": {
+                "attack": 110,
+                "defence": 240,
+                "chips": 980,
+                "critical": "Double this monster's chips.",
+                "forlorn": "Half this monster's chips, rounded up.",
+                "activation": "Buff a chosen played card by +11 or x11."
+            }
+        },
+        {
+            "name": "Two of Pentacles",
+            "index": 65,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "two",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pe02.jpg",
+            "effects": {
+                "regular": "Add x2 to any one two in a played hand.",
+                "southern": "Increase the rank of any 2 in any played hand by 1.",
+                "coulette": "Balance, adaptability, time management, prioritization",
+                "soloterrare": "A shifting mass of flesh with two prominent mouths, each consuming and regurgitating coins endlessly."
+            },
+            "soloterrareStats": {
+                "attack": 20,
+                "defence": 40,
+                "chips": 240,
+                "critical": "Increase this monster's chips by 40 and reduce your chips by the same amount. Increase this monster's attack by 20.",
+                "forlorn": "Give the left most played card -2, if that debuff would bring it below its face value, destroy that card.",
+                "activation": "Buff a chosen played card by +2."
+            }
+        },
+        {
+            "name": "Three of Pentacles",
+            "index": 66,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "three",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pe03.jpg",
+            "effects": {
+                "regular": "Add x3 to any one three in a played hand.",
+                "southern": "Increase or decrease the rank of any 3 in any played hand by 1.",
+                "coulette": "Teamwork, collaboration, learning, implementation",
+                "soloterrare": "A triple-mouthed flesh mass with three sets of stubby fingers, each hand working in unison to craft something unseen."
+            },
+            "soloterrareStats": {
+                "attack": 30,
+                "defence": 60,
+                "chips": 360,
+                "critical": "Increase this monster's chips by 60 and reduce your chips by the same amount. Increase this monster's attack by 30.",
+                "forlorn": "Give the left most played card -3, if that debuff would bring it below its face value, destroy that card.",
+                "activation": "Buff a chosen played card by +3."
+            }
+        },
+        {
+            "name": "Four of Pentacles",
+            "index": 67,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "four",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pe04.jpg",
+            "effects": {
+                "regular": "Add x4 to any one four in a played hand.",
+                "southern": "Increase or decrease the rank of any 4 in any played hand by 1.",
+                "coulette": "Conservation, security, frugality, control",
+                "soloterrare": "A grasping mass of flesh with four tight-clenched fists, holding tightly to what it has consumed."
+            },
+            "soloterrareStats": {
+                "attack": 40,
+                "defence": 80,
+                "chips": 480,
+                "critical": "Increase this monster's chips by 80 and reduce your chips by the same amount. Increase this monster's attack by 40.",
+                "forlorn": "Give the left most played card -4, if that debuff would bring it below its face value, destroy that card.",
+                "activation": "Buff a chosen played card by +4."
+            }
+        },
+        {
+            "name": "Five of Pentacles",
+            "index": 68,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "five",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pe05.jpg",
+            "effects": {
+                "regular": "Add x5 to any one five in a played hand.",
+                "southern": "Increase or decrease the rank of any 5 in any played hand by 1.",
+                "coulette": "Hard times, isolation, worry, financial loss",
+                "soloterrare": "A shivering mass of flesh with five gaping mouths, all crying out in hunger and need."
+            },
+            "soloterrareStats": {
+                "attack": 50,
+                "defence": 100,
+                "chips": 600,
+                "critical": "Increase this monster's chips by 100 and reduce your chips by the same amount. Increase this monster's attack by 50.",
+                "forlorn": "Give the left most played card -5, if that debuff would bring it below its face value, destroy that card.",
+                "activation": "Buff a chosen played card by +5."
+            }
+        },
+        {
+            "name": "Six of Pentacles",
+            "index": 69,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "six",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pe06.jpg",
+            "effects": {
+                "regular": "Add x6 to any one six in a played hand.",
+                "southern": "Increase or decrease the rank of any 6 in any played hand by 1.",
+                "coulette": "Generosity, charity, giving, receiving, sharing wealth",
+                "soloterrare": "A generous mass with six open hands, some giving while others receive in an endless cycle."
+            },
+            "soloterrareStats": {
+                "attack": 60,
+                "defence": 120,
+                "chips": 720,
+                "critical": "Increase this monster's chips by 120 and reduce your chips by the same amount. Increase this monster's attack by 60.",
+                "forlorn": "Give the left most played card -6, if that debuff would bring it below its face value, destroy that card.",
+                "activation": "Buff a chosen played card by +6."
+            }
+        },
+        {
+            "name": "Seven of Pentacles",
+            "index": 70,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "seven",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pe07.jpg",
+            "effects": {
+                "regular": "Add x7 to any single seven in a played hand.",
+                "southern": "Increase or decrease the rank of any 7 in any played hand by 1.",
+                "coulette": "Long-term view, sustainable results, perseverance, investment",
+                "soloterrare": "A patient mass with seven eyes, carefully watching over its investments and growth."
+            },
+            "soloterrareStats": {
+                "attack": 70,
+                "defence": 140,
+                "chips": 840,
+                "critical": "Increase this monster's chips by 140 and reduce your chips by the same amount. Increase this monster's attack by 70.",
+                "forlorn": "Give the left most played card -7, if that debuff would bring it below its face value, destroy that card.",
+                "activation": "Buff a chosen played card by +7."
+            }
+        },
+        {
+            "name": "Eight of Pentacles",
+            "index": 71,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "eight",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pe08.jpg",
+            "effects": {
+                "regular": "Add x8 to any one eight in a played hand.",
+                "southern": "Increase or decrease the rank of any 8 in any played hand by 1.",
+                "coulette": "Apprenticeship, skill development, craftsmanship, quality",
+                "soloterrare": "A skilled mass with eight precise hands, all working diligently on intricate tasks."
+            },
+            "soloterrareStats": {
+                "attack": 80,
+                "defence": 160,
+                "chips": 960,
+                "critical": "Increase this monster's chips by 160 and reduce your chips by the same amount. Increase this monster's attack by 80.",
+                "forlorn": "Give the left most played card -8, if that debuff would bring it below its face value, destroy that card.",
+                "activation": "Buff a chosen played card by +8."
+            }
+        },
+        {
+            "name": "Nine of Pentacles",
+            "index": 72,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "nine",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pe09.jpg",
+            "effects": {
+                "regular": "Add x9 to any one nine in a played hand.",
+                "southern": "Increase or decrease the rank of any 9 in any played hand by 1.",
+                "coulette": "Abundance, luxury, self-sufficiency, rewards",
+                "soloterrare": "A contented mass with nine jewel-adorned appendages, basking in its own abundance and success."
+            },
+            "soloterrareStats": {
+                "attack": 90,
+                "defence": 180,
+                "chips": 1080,
+                "critical": "Increase this monster's chips by 180 and reduce your chips by the same amount. Increase this monster's attack by 90.",
+                "forlorn": "Give the left most played card -9, if that debuff would bring it below its face value, destroy that card.",
+                "activation": "Buff a chosen played card by +9."
+            }
+        },
+        {
+            "name": "Ten of Pentacles",
+            "index": 73,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "ten",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pe10.jpg",
+            "effects": {
+                "regular": "Add x10 to any one ten in a played hand.",
+                "southern": "Increase or decrease the rank of any 10 in any played hand by 1.",
+                "coulette": "Wealth, inheritance, family, legacy, establishment",
+                "soloterrare": "A massive creature filling the corridor, with ten jewel-encrusted limbs representing generations of accumulated wealth."
+            },
+            "soloterrareStats": {
+                "attack": 100,
+                "defence": 200,
+                "chips": 1200,
+                "critical": "Increase this monster's chips by 200 and reduce your chips by the same amount. Increase this monster's attack by 100.",
+                "forlorn": "Give the left most played card -10, if that debuff would bring it below its face value, destroy that card.",
+                "activation": "Buff a chosen played card by +10."
+            }
+        },
+        {
+            "name": "Page of Pentacles",
+            "index": 74,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "page",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pepa.jpg",
+            "effects": {
+                "regular": "Add x10 to any one heart in a played hand.",
+                "southern": "Increase or decrease the rank of any card in any played hand by 1.",
+                "coulette": "Manifestation, financial opportunity, new skills, practicality",
+                "soloterrare": "A cackling mass of smiles and mouths, all sunken into a bulbous blob of flesh."
+            },
+            "soloterrareStats": {
+                "attack": 100,
+                "defence": 200,
+                "chips": 880,
+                "critical": "Give this monster half your chips, rounded up.",
+                "forlorn": "Half this monster's chips, rounded up.",
+                "activation": "Buff a chosen played card by +10 or x10."
+            }
+        },
+        {
+            "name": "Knight of Pentacles",
+            "index": 75,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "knight",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pekn.jpg",
+            "effects": {
+                "regular": "Add x10 to any one Jack in a played hand.",
+                "southern": "Increase or decrease the rank of any Jack in any played hand by 1.",
+                "coulette": "Hard work, productivity, routine, conservatism",
+                "soloterrare": "A battle-scarred mass of flesh and arms, arrows and swords sticking out of its bloody body as though fresh from a field of glory."
+            },
+            "soloterrareStats": {
+                "attack": 180,
+                "defence": 180,
+                "chips": 900,
+                "critical": "Give this monster 200 of your chips.",
+                "forlorn": "Half this monster's chips, rounded up.",
+                "activation": "Buff a chosen played card by +10."
+            }
+        },
+        {
+            "name": "Queen of Pentacles",
+            "index": 76,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "queen",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/pequ.jpg",
+            "effects": {
+                "regular": "Add x10 to any one queen in a played hand.",
+                "southern": "Increase or decrease the rank of any Queen in any played hand by 1.",
+                "coulette": "Practicality, creature comforts, financial security, generosity",
+                "soloterrare": "A mass of puckered lips in a hell of kisses and moans. This bulbous creature attempts to crush those it rolls into."
+            },
+            "soloterrareStats": {
+                "attack": 90,
+                "defence": 110,
+                "chips": 1000,
+                "critical": "You cannot attack next turn.",
+                "forlorn": "Half this monster's chips, rounded up.",
+                "activation": "Buff a chosen played card by x10."
+            }
+        },
+        {
+            "name": "King of Pentacles",
+            "index": 77,
+            "type": "minor",
+            "suit": "pentacles",
+            "value": "king",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/peki.jpg",
+            "effects": {
+                "regular": "Add x10 to any one king in a played hand.",
+                "southern": "Increase or decrease the rank of any King in any played hand by 1.",
+                "coulette": "Wealth, business, leadership, security, abundance",
+                "soloterrare": "A mass of arms and flesh, each stubby limb holding a golden rod or jewel. It waves them, demanding fealty in a deep voice."
+            },
+            "soloterrareStats": {
+                "attack": 30,
+                "defence": 80,
+                "chips": 1000,
+                "critical": "This monster steals half your chips, rounded up. These chips are added to the monster's chips.",
+                "forlorn": "Half this monster's chips, rounded up. Then destroy the left most played card.",
+                "activation": "Buff a chosen card by +10 or x10."
+            }
         }
     ]
 }
-
-
-
-

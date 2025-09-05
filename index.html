@@ -51,14 +51,23 @@
     
     <div class="controls">
         <div class="deck-selector">
-            <select id="deckSelect" class="deck-dropdown">
+            <select id="deckSelect" class="dropdown">
                 <option value="regular">Regular</option>
                 <option value="southern">Southern</option>
                 <option value="soloterrare">Soloterrare</option>
                 <option value="coulette">Coulette</option>
             </select>
         </div>
-        
+        <div class="suit-selector">
+            <select id="suitSelect" class="dropdown">
+                <option value="all">All Cards</option>
+                <option value="major">Major Arcana</option>
+                <option value="wands">Wands</option>
+                <option value="cups">Cups</option>
+                <option value="swords">Swords</option>
+                <option value="pentacles">Pentacles</option>
+            </select>
+        </div>
         <div class="search-container">
             <i class="fas fa-search search-icon"></i>
             <input type="text" class="search-input" placeholder="Search tarot cards..." id="searchInput">

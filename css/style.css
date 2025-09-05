@@ -14,6 +14,7 @@
     --toggle-bg:rgba(31, 20, 51, 0.8);
  /*    --text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
     --text-shadow:-2px -2px 0 #000000d8, 2px -2px 0 #000000d8, -2px 2px 0 #000000d8, 2px 2px 0 #000000d8;
+    --transition: transition: all 0.2s steps(4, end);
 
 
   --text-h: var(--white-1);
@@ -113,12 +114,12 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.05em;
 
-    .deck-selector {
+    .deck-selector, .suit-selector {
         display: flex;
         align-items: center;
         gap: 15px;
 
-        .deck-dropdown {
+        .dropdown {
             padding: 12px 20px;
             border-radius: 8px;
             border: 2px solid #6b4e94;
@@ -126,7 +127,7 @@ h1 {
             color: white;
             font-size: 1rem;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: var(--transition);
             appearance: none;
             background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e9c46a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
             background-repeat: no-repeat;
@@ -136,17 +137,17 @@ h1 {
             min-width: 200px;   
         }
 
-        .deck-dropdown:hover {
-            border-color: var(--yellow-0);
+        .dropdown:hover {
+            transform: translate(-1px, -2px);
         }
 
-        .deck-dropdown:focus {
+        .dropdown:focus {
             outline: none;
             border-color: var(--yellow-0);
             box-shadow: 0 0 15px rgba(233, 196, 106, 0.3);
         }
 
-        .deck-dropdown option {
+        .dropdown option {
             background: #2d1b4e;
             color: white;
             padding: 10px;
@@ -175,12 +176,16 @@ h1 {
             border-color: var(--yellow-0);
             box-shadow: 0 0 15px rgba(233, 196, 106, 0.3);
         }
+        
 
         .search-icon {
             position: absolute;
             left: 15px;
             color: #9f85c9;
         }
+    }
+    .search-container:hover {
+        transform: translate(-1px, -2px);
     }
 
 }
@@ -191,7 +196,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px;
-    max-width: 1400px;
+    max-width: 1800px;
     margin: 0 auto;
 
     .section-header {
@@ -235,13 +240,34 @@ h1 {
         border-left: 5px solid #dce775;
     } */
 }
+.pixelated-border::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 15px;
+    border: 3px solid transparent;
+    filter: url(#Pixelate);
+    z-index: 2;
+    pointer-events: none;
+    
+    /* Create the border with background */
+    background: linear-gradient(45deg, #6b4e94, #4c2a7a);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
 
 .card {
     background: #3a2471;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: var(--transition);
     position: relative;
     height: 550px;
     display: flex;
@@ -251,7 +277,7 @@ h1 {
 }
 
 .card:hover {
-    transform: translate(-2px, -4px);
+    transform: translate(-2px, -2px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -373,28 +399,32 @@ h1 {
             z-index: 10;
             display:flex;
             flex-direction: column;
+            gap:2px;
 
             /* Toggle button style */
             .toggle-btn {
-                padding: 8px 16px;
+                padding: 6px 12px;
                 font-family: "Alagard", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 0.9rem;
-            letter-spacing:0.01em;
+                font-size: 0.9rem;
+                letter-spacing:0.01em;
                 background: var(--toggle-bg);
                 color: var(--text-h);
                 color: #d0c4e4;
-                border: 2px solid var(--purple-2);
-                border-radius: 6px;
+                border-left: 2px solid transparent;
+                border-right: 2px solid transparent;
+                border-top: none;
+                border-bottom: none;
+                border-radius: 8px;
                 cursor: pointer;
-                font-weight: bold;
-                transition: all 0.3s ease;
+                transition: var(--transition)
             }
 
             /* Active toggle button style */
             .toggle-btn.active {
                 background: var(--toggle-bg);
-                color: var(--text-h);
-                border-color: var(--yellow-2);
+                color: var(--yellow-0);
+                border-left: var(--decoration-effect);
+                border-right: var(--decoration-effect);
                 box-shadow: 0 0 10px rgba(233, 196, 106, 0.5);
             }
         }
@@ -447,7 +477,8 @@ h1 {
         
 
         }
-
+        
+        
         .contents{
 
             .content-section {
@@ -465,7 +496,7 @@ h1 {
     }
 }
 
-.card-image::before{
+.card-image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -480,7 +511,9 @@ h1 {
   pointer-events: none; /* Allow clicks to pass through to content */
 }
 
-
+.overlay-effect::before {
+    z-index: 20;  
+}
 
 
 
@@ -584,7 +617,7 @@ h1 {
         align-items: center;
     }
     
-    .deck-selector, .deck-dropdown, .search-container, .search-input {
+    .deck-selector, .suit-selector, .dropdown, .search-container, .search-input {
         width: 100%;
     }
     

@@ -1,11 +1,13 @@
 // Current deck type
 let currentDeck = 'regular';
+let currentSuit = 'all'; // Add this variable
 let tarotData = null;
 
 // DOM elements
 const cardGrid = document.getElementById('cardGrid');
 const searchInput = document.getElementById('searchInput');
 const deckSelect = document.getElementById('deckSelect');
+const suitSelect = document.getElementById('suitSelect'); // Add this element
 
 // Initialize the page
 function init() {
@@ -39,6 +41,12 @@ function setupEventListeners() {
         currentDeck = deckSelect.value;
         filterCards();
     });
+    
+    // Suit selection - ADD THIS
+    suitSelect.addEventListener('change', () => {
+        currentSuit = suitSelect.value;
+        filterCards();
+    });
 }
 
 function displayCards(cards) {
@@ -49,7 +57,13 @@ function displayCards(cards) {
         return;
     }
     
-    // Group cards by type (major) or suit (minor)
+    // If filtering by a specific suit, show without headers
+    if (currentSuit !== 'all') {
+        cards.forEach(card => addCardElement(card));
+        return;
+    }
+    
+    // Group cards by type (major) or suit (minor) - only when showing all
     const groupedCards = groupCardsByTypeOrSuit(cards);
     
     // Display each group with its appropriate header
@@ -160,13 +174,10 @@ function createSoloterrareCardHTML(card) {
                     </div>
                 </div>
                 
-                <!-- Toggle buttons - should be near the top -->
-               
-                
                 <div class="contents">
                     <!-- Abilities section with unique ID -->
                     <div id="${cardId}-abilities" class="content-section  active">
-                        <div class="overlay-effect solo">${card.effects[currentDeck]}</div>
+                        <div class="overlay-effect pixelated-border solo">${card.effects[currentDeck]}</div>
                         <div class="overlay-effect critical">
                             <div><span class="title">Critical: </span>${stats.critical}</div>
                         </div>
@@ -193,15 +204,13 @@ function createSoloterrareCardHTML(card) {
                     <div id="${cardId}-activation" class="content-section activation overlay-effect">
                         <div><span class="title">Activation: </span>${stats.activation}</div>
                     </div>
-                    
-                    
                 </div>
             </div>
         </div>
     `;
 }
 
-// Event delegation for toggle buttons (add this after card creation)
+// Event delegation for toggle buttons
 function setupToggleButtons() {
     // Use event delegation for dynamically created buttons
     document.addEventListener('click', function(e) {
@@ -236,25 +245,34 @@ function setupToggleButtons() {
     });
 }
 
-// Call this function after you've created all cards
-setupToggleButtons();
-
-// Filter cards based on search input
+// Filter cards based on search input AND suit filter
 function filterCards() {
     const searchTerm = searchInput.value.toLowerCase();
     
-    if (searchTerm === '') {
-        displayCards(tarotData.cards);
-        return;
+    let filteredCards = tarotData.cards;
+    
+    // Apply suit filter first
+    if (currentSuit !== 'all') {
+        if (currentSuit === 'major') {
+            filteredCards = filteredCards.filter(card => card.type === 'major');
+        } else {
+            filteredCards = filteredCards.filter(card => card.suit === currentSuit);
+        }
     }
     
-    const filteredCards = tarotData.cards.filter(card => {
-        return card.name.toLowerCase().includes(searchTerm) || 
-               card.effects[currentDeck].toLowerCase().includes(searchTerm);
-    });
+    // Then apply search filter
+    if (searchTerm !== '') {
+        filteredCards = filteredCards.filter(card => {
+            return card.name.toLowerCase().includes(searchTerm) || 
+                   card.effects[currentDeck].toLowerCase().includes(searchTerm);
+        });
+    }
     
     displayCards(filteredCards);
 }
 
 // Initialize the application when DOM is loaded
 document.addEventListener('DOMContentLoaded', init);
+
+// Call this function after you've created all cards
+setupToggleButtons();
