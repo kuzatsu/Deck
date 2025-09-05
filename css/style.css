@@ -12,7 +12,8 @@
     --color-critical:var(--red-2);
 
     --toggle-bg:rgba(31, 20, 51, 0.8);
-    --text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ /*    --text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    --text-shadow:-2px -2px 0 #000000d8, 2px -2px 0 #000000d8, -2px 2px 0 #000000d8, 2px 2px 0 #000000d8;
 
 
   --text-h: var(--white-1);
@@ -89,7 +90,7 @@ h1 {
     font-size: 2.8rem;
     margin-bottom: 10px;
     color: var(--yellow-0);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: var(--text-shadow);
 }
 
 .description {
@@ -192,6 +193,47 @@ h1 {
     gap: 25px;
     max-width: 1400px;
     margin: 0 auto;
+
+    .section-header {
+        grid-column: 1 / -1;
+        font-size: 2rem;
+        text-align: center;
+        letter-spacing: 3px;
+        border-radius: 8px;
+        font-family: "Alagard", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--yellow-0);
+    }
+
+    /* Different colors for different sections */
+    /* .section-header:contains('MAJOR ARCANA') {
+        background: linear-gradient(to right, #3a2471, #2d1b4e);
+        color: #e9c46a;
+        border-left: 5px solid #e9c46a;
+    }
+
+    .section-header:contains('WANDS') {
+        background: linear-gradient(to right, #5d3a1a, #8b5a2b);
+        color: #ffaa33;
+        border-left: 5px solid #ffaa33;
+    }
+
+    .section-header:contains('CUPS') {
+        background: linear-gradient(to right, #1a365d, #2a4a7a);
+        color: #4fc3f7;
+        border-left: 5px solid #4fc3f7;
+    }
+
+    .section-header:contains('SWORDS') {
+        background: linear-gradient(to right, #37474f, #546e7a);
+        color: #b0bec5;
+        border-left: 5px solid #b0bec5;
+    }
+
+    .section-header:contains('PENTACLES') {
+        background: linear-gradient(to right, #33691e, #558b2f);
+        color: #dce775;
+        border-left: 5px solid #dce775;
+    } */
 }
 
 .card {
@@ -331,6 +373,30 @@ h1 {
             z-index: 10;
             display:flex;
             flex-direction: column;
+
+            /* Toggle button style */
+            .toggle-btn {
+                padding: 8px 16px;
+                font-family: "Alagard", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing:0.01em;
+                background: var(--toggle-bg);
+                color: var(--text-h);
+                color: #d0c4e4;
+                border: 2px solid var(--purple-2);
+                border-radius: 6px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: all 0.3s ease;
+            }
+
+            /* Active toggle button style */
+            .toggle-btn.active {
+                background: var(--toggle-bg);
+                color: var(--text-h);
+                border-color: var(--yellow-2);
+                box-shadow: 0 0 10px rgba(233, 196, 106, 0.5);
+            }
         }
 
         .card-name, .card-name.overlay-effect {
@@ -343,7 +409,6 @@ h1 {
             letter-spacing:0.05em;
             border-left: var(--decoration-name);
             border-right: var(--decoration-name);
-            background:rgba(0, 0, 0, 0.6);
         }
     
 
@@ -418,26 +483,7 @@ h1 {
 
 
 
-/* Toggle button style */
-.toggle-btn {
-    padding: 8px 16px;
-    background: var(--toggle-bg);
-    color: var(--text-h);
-    color: #d0c4e4;
-    border: 2px solid var(--purple-2);
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
 
-/* Active toggle button style */
-.toggle-btn.active {
-    background: var(--toggle-bg);
-    color: var(--text-h);
-    border-color: var(--yellow-2);
-    box-shadow: 0 0 10px rgba(233, 196, 106, 0.5);
-}
 
 
 .soloterrare-card {

@@ -41,7 +41,6 @@ function setupEventListeners() {
     });
 }
 
-// Display cards based on current deck and search term
 function displayCards(cards) {
     cardGrid.innerHTML = '';
     
@@ -50,29 +49,98 @@ function displayCards(cards) {
         return;
     }
     
-    cards.forEach(card => {
-        const cardElement = document.createElement('div');
+    // Group cards by type (major) or suit (minor)
+    const groupedCards = groupCardsByTypeOrSuit(cards);
+    
+    // Display each group with its appropriate header
+    for (const [groupName, groupCards] of Object.entries(groupedCards)) {
+        // Add section header - convert suit to proper case
+        const headerText = groupName === 'major' ? 'MAJOR ARCANA' : groupName.toUpperCase();
+        addSectionHeader(headerText);
         
-        if (currentDeck === 'soloterrare' && card.soloterrareStats) {
-            // Special layout for Soloterrare cards
-            cardElement.className = 'card soloterrare-card';
-            cardElement.innerHTML = createSoloterrareCardHTML(card);
+        // Add cards for this group
+        groupCards.forEach(card => addCardElement(card));
+    }
+}
+
+// Group cards by type for major, by suit for minor
+function groupCardsByTypeOrSuit(cards) {
+    const groups = {};
+    
+    cards.forEach(card => {
+        let groupName;
+        
+        if (card.type === 'major') {
+            groupName = 'major';
         } else {
-            // Standard layout for other decks
-            cardElement.className = 'card';
-            cardElement.innerHTML = `
-                <div class="card-image" style="background-image: url('${card.image}')">
-                    <div class="card-index">${card.index}</div>
-                    <div class="card-overlay">
-                        <div class="card-name overlay-effect">${card.name}</div>
-                        <div class="overlay-effect">${card.effects[currentDeck]}</div>
-                    </div>
-                </div>
-            `;
+            // Use the suit name for minor arcana
+            groupName = card.suit || 'other';
         }
         
-        cardGrid.appendChild(cardElement);
+        if (!groups[groupName]) {
+            groups[groupName] = [];
+        }
+        
+        groups[groupName].push(card);
     });
+    
+    // Sort the groups in a specific order: Major first, then suits in traditional order
+    const orderedGroups = {};
+    const order = ['major', 'wands', 'cups', 'swords', 'pentacles'];
+    
+    order.forEach(group => {
+        if (groups[group]) {
+            orderedGroups[group] = groups[group];
+            // Sort cards within each group by index
+            orderedGroups[group].sort((a, b) => a.index - b.index);
+        }
+    });
+    
+    // Add any remaining groups that weren't in the order array
+    Object.keys(groups).forEach(group => {
+        if (!orderedGroups[group]) {
+            orderedGroups[group] = groups[group];
+            orderedGroups[group].sort((a, b) => a.index - b.index);
+        }
+    });
+    
+    return orderedGroups;
+}
+
+// Helper function to add section headers
+function addSectionHeader(title) {
+    const headerElement = document.createElement('div');
+    headerElement.className = 'section-header';
+    headerElement.textContent = title;
+    
+    // Add data attribute for styling
+    const type = title === 'MAJOR ARCANA' ? 'major' : title.toLowerCase();
+    headerElement.setAttribute('data-type', type);
+    
+    cardGrid.appendChild(headerElement);
+}
+
+// Helper function to add card elements
+function addCardElement(card) {
+    const cardElement = document.createElement('div');
+    
+    if (currentDeck === 'soloterrare' && card.soloterrareStats) {
+        cardElement.className = 'card soloterrare-card';
+        cardElement.innerHTML = createSoloterrareCardHTML(card);
+    } else {
+        cardElement.className = 'card';
+        cardElement.innerHTML = `
+            <div class="card-image" style="background-image: url('${card.image}')">
+                <div class="card-index">${card.index}</div>
+                <div class="card-overlay">
+                    <div class="card-name overlay-effect">${card.name}</div>
+                    <div class="overlay-effect">${card.effects[currentDeck]}</div>
+                </div>
+            </div>
+        `;
+    }
+    
+    cardGrid.appendChild(cardElement);
 }
 
 // Create HTML for Soloterrare cards

@@ -3,6 +3,7 @@
         {
             "name": "The Fool",
             "index": 0,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar00.jpg",
             "effects": {
                 "regular": "Remove all Tarot played by you. Put a Tarot from your secondary hand into play and place The Fool under it (The Fool is not in play and is linked to it). This Tarot cannot be removed and activates twice for the rest of the game.",
@@ -23,6 +24,7 @@
         {
             "name": "The Magician",
             "index": 1,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar01.jpg",
             "effects": {
                 "regular": "Fast. When the next card in your played hand would be destroyed, flip a coin and call it. If you call correctly, the card isn’t destroyed.",
@@ -41,6 +43,7 @@
         {
             "name": "The High Priestess",
             "index": 2,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar02.jpg",
             "effects": {
                 "regular": "During scoring, all face cards in your played hand add +30 to the score. This is not a permanent buff.",
@@ -59,6 +62,7 @@
         {
             "name": "The Empress",
             "index": 3,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar03.jpg",
             "effects": {
                 "regular": "Destroy all cards with rank lower than 4. Does not count Aces.",
@@ -77,6 +81,7 @@
         {
             "name": "The Emperor",
             "index": 4,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar04.jpg",
             "effects": {
                 "regular": "Buff any King by +100, minus 10 for each Tarot activated this turn before this. You cannot activate any Tarot after this Tarot.",
@@ -95,6 +100,7 @@
         {
             "name": "The Hierophant",
             "index": 5,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar05.jpg",
             "effects": {
                 "regular": "Multiply the multiplier by 4 if cards in your played hand add up to exactly 21 after calculation (not counting buffs).",
@@ -113,6 +119,7 @@
         {
             "name": "The Lovers",
             "index": 6,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar06.jpg",
             "effects": {
                 "regular": "The next Flush or Straight you play only needs 4 cards instead of 5.",
@@ -131,6 +138,7 @@
         {
             "name": "The Chariot",
             "index": 7,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar07.jpg",
             "effects": {
                 "regular": "Choose a player. Cards scored by them count towards your score this turn. Also, any buffs and multipliers on them are added to your hand value this turn. Give The Chariot to that player if you win.",
@@ -149,6 +157,7 @@
         {
             "name": "Strength",
             "index": 8,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar08.jpg",
             "effects": {
                 "regular": "If you score a Flush this turn, double the multiplier after determining multiplier.",
@@ -167,6 +176,7 @@
         {
             "name": "The Hermit",
             "index": 9,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar09.jpg",
             "effects": {
                 "regular": "If you score a High Card this turn, triple the multiplier after determining multiplier.",
@@ -185,6 +195,7 @@
         {
             "name": "Wheel of Fortune",
             "index": 10,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar10.jpg",
             "effects": {
                 "regular": "Fast. Each opponent gives you a card to be added to your main hand from their main hand at random.",
@@ -203,6 +214,7 @@
         {
             "name": "Justice",
             "index": 11,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar11.jpg",
             "effects": {
                 "regular": "Remove this Tarot and another Tarot in play.",
@@ -221,6 +233,7 @@
         {
             "name": "The Hanged Man",
             "index": 12,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar12.jpg",
             "effects": {
                 "regular": "Discard your current played hand and play a new hand face-up.",
@@ -239,6 +252,7 @@
         {
             "name": "Death",
             "index": 13,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar13.jpg",
             "effects": {
                 "regular": "Choose a suit. Cards of the chosen suit do not score this round, their multipliers are not added, and they do not count towards their played hands.",
@@ -257,6 +271,7 @@
         {
             "name": "Temperance",
             "index": 14,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar14.jpg",
             "effects": {
                 "regular": "Trade this Tarot with a non-activated Tarot in play.",
@@ -275,6 +290,7 @@
         {
             "name": "The Devil",
             "index": 15,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar15.jpg",
             "effects": {
                 "regular": "Double the score of each card in your played hand this turn. This turn, if you lose, the opponent gains double your chips.",
@@ -293,6 +309,7 @@
         {
             "name": "The Tower",
             "index": 16,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar16.jpg",
             "effects": {
                 "regular": "Choose a card in play. Each time a tarot is activated after this give that card +10. If you activate another tarot this turn, destroy that card.",
@@ -300,8 +317,8 @@
                 "soloterrare": "A large shuffling mass of flesh, many limbs and mouths pulling a cylinder of grotesque down the tight corridor. It moans and leaves a trail of lymph as it goes."            
             },
             "soloterrareStats": {
-                "attack": "X",
-                "defence": "Y",
+                "attack": "x",
+                "defence": "y",
                 "chips": "1000",
                 "critical": "Buff the right most played card by -X where X is the tower’s CHIPS. If this brings the card's value below its face value it is destroyed.",
                 "forlorn": "Add 500 chips to the tower’s CHIPS. <br> Special attack - (X): is its CHIPS. <br>Special defence - (Y): is the highest face value amongst your played cards.",
@@ -311,6 +328,7 @@
         {
             "name": "The Star",
             "index": 17,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar17.jpg",
             "effects": {
                 "regular": "This scoring phase, clubs/spades are the same and all diamonds/hearts are the same.",
@@ -329,6 +347,7 @@
         {
             "name": "The Moon",
             "index": 18,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar18.jpg",
             "effects": {
                 "regular": "Buff one card you have played by +30 and one card an opponent has played.",
@@ -347,6 +366,7 @@
         {
             "name": "The Sun",
             "index": 19,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar19.jpg",
             "effects": {
                 "regular": "Destroy one card you have played and one card an opponent has played of the same suit or rank.",
@@ -365,6 +385,7 @@
         {
             "name": "The Judgement",
             "index": 20,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar20.jpg",
             "effects": {
                 "regular": "Pick a suit. Buff all cards of the chosen suit by +10.",
@@ -383,6 +404,7 @@
         {
             "name": "The World",
             "index": 21,
+            "type": "major",
             "image": "https://www.sacred-texts.com/tarot/pkt/img/ar21.jpg",
             "effects": {
                 "regular": "Shuffle all played hands, discard and tarot back into their respective decks. End the round without a winner. Then remove the world (not literally.)",
@@ -396,6 +418,314 @@
                 "critical": "Lose all your chips.",
                 "forlorn": "Lose half your chips, rounded down.",
                 "activation": "Discard your hand then draw that many cards."
+            }
+        },
+        {
+            "name": "Ace of Wands",
+            "index": 22,
+            "type": "minor",
+            "suit": "wands",
+            "value": "ace",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/waac.jpg",
+            "effects": {
+                "regular": "Choose a suit. Choose a second suit. Change all cards in all played hands that are in the first suit into the second suit.",
+                "southern": "Choose a card in a played hand. That card becomes every suit.",
+                "coulette": "Creative force, inspiration, new beginnings, potential",
+                "soloterrare": "A muscular man, his eyes sewn shut and his arms replaced with large, wooden clubs."
+            },
+            "soloterrareStats": {
+                "attack": 110,
+                "defence": 220,
+                "chips": 880,
+                "critical": "Turn a tarot facedown. Facedown tarot cannot be flipped face up and does nothing when activated.",
+                "forlorn": "Change all cards in your played hand into a 2.",
+                "activation": "Destroy an Ace in your primary hand. Change a card of your choice into an Ace."
+            }
+        },
+        {
+            "name": "Two of Wands",
+            "index": 23,
+            "type": "minor",
+            "suit": "wands",
+            "value": "two",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wa02.jpg",
+            "effects": {
+                "regular": "Change a card played in either your played hand or an opponent's played hand to a 2 before scoring.",
+                "southern": "Change a 2 in a played hand to a suit of your choosing.",
+                "coulette": "Planning, discovery, future planning, progress",
+                "soloterrare": "A blind figure feeling its way with two spiked staffs, bashing anything in its path."
+            },
+            "soloterrareStats": {
+                "attack": 20,
+                "defence": 40,
+                "chips": 200,
+                "critical": "Change a card of your choice into a 2.",
+                "forlorn": "Change a card of your choice into a 2.",
+                "activation": "Destroy a 2 in your primary hand. Change any card in your played hand into a 2."
+            }
+        },
+        {
+            "name": "Three of Wands",
+            "index": 24,
+            "type": "minor",
+            "suit": "wands",
+            "value": "three",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wa03.jpg",
+            "effects": {
+                "regular": "Change a card played in either your played hand or an opponent's played hand to a 3 before scoring.",
+                "southern": "Change a 3 in a played hand to a suit of your choosing.",
+                "coulette": "Expansion, foresight, overseas opportunities, trade",
+                "soloterrare": "A malnourished human tapping three staffs rhythmically against the ground, sensing vibrations."
+            },
+            "soloterrareStats": {
+                "attack": 30,
+                "defence": 60,
+                "chips": 300,
+                "critical": "Change a card of your choice into a 2.",
+                "forlorn": "Change a card of your choice into a 3.",
+                "activation": "Destroy a 3 in your primary hand. Change any card in your played hand into a 3."
+            }
+        },
+        {
+            "name": "Four of Wands",
+            "index": 25,
+            "type": "minor",
+            "suit": "wands",
+            "value": "four",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wa04.jpg",
+            "effects": {
+                "regular": "Change a card played in either your played hand or an opponent's played hand to a 4 before scoring.",
+                "southern": "Change a 4 in a played hand to a suit of your choosing.",
+                "coulette": "Celebration, harmony, marriage, homecoming",
+                "soloterrare": "A blind figure using four staffs to navigate, creating a cage-like structure around itself."
+            },
+            "soloterrareStats": {
+                "attack": 40,
+                "defence": 80,
+                "chips": 400,
+                "critical": "Change a card of your choice into a 2.",
+                "forlorn": "Change a card of your choice into a 4.",
+                "activation": "Destroy a 4 in your primary hand. Change any card in your played hand into a 4."
+            }
+        },
+        {
+            "name": "Five of Wands",
+            "index": 26,
+            "type": "minor",
+            "suit": "wands",
+            "value": "five",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wa05.jpg",
+            "effects": {
+                "regular": "Change a card played in either your played hand or an opponent's played hand to a 5 before scoring.",
+                "southern": "Change a 5 in a played hand to a suit of your choosing.",
+                "coulette": "Conflict, competition, disputes, tension",
+                "soloterrare": "Five blind figures clashing their staffs together in chaotic combat, each sensing only immediate threats."
+            },
+            "soloterrareStats": {
+                "attack": 50,
+                "defence": 100,
+                "chips": 500,
+                "critical": "Change a card of your choice into a 2.",
+                "forlorn": "Change a card of your choice into a 5.",
+                "activation": "Destroy a 5 in your primary hand. Change any card in your played hand into a 5."
+            }
+        },
+        {
+            "name": "Six of Wands",
+            "index": 27,
+            "type": "minor",
+            "suit": "wands",
+            "value": "six",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wa06.jpg",
+            "effects": {
+                "regular": "Change a card played in either your played hand or an opponent's played hand to a 6 before scoring.",
+                "southern": "Change a 6 in a played hand to a suit of your choosing.",
+                "coulette": "Victory, success, public recognition, progress",
+                "soloterrare": "A triumphant blind figure carried by others, six staffs raised high in victory formation."
+            },
+            "soloterrareStats": {
+                "attack": 60,
+                "defence": 120,
+                "chips": 600,
+                "critical": "Change a card of your choice into a 2.",
+                "forlorn": "Change a card of your choice into a 6.",
+                "activation": "Destroy a 6 in your primary hand. Change any card in your played hand into a 6."
+            }
+        },
+        {
+            "name": "Seven of Wands",
+            "index": 28,
+            "type": "minor",
+            "suit": "wands",
+            "value": "seven",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wa07.jpg",
+            "effects": {
+                "regular": "Change a card played in either your played hand or an opponent's played hand to a 7 before scoring.",
+                "southern": "Change a 7 in a played hand to a suit of your choosing.",
+                "coulette": "Perseverance, defense, maintaining position, challenge",
+                "soloterrare": "A determined blind figure defending a high position with seven staffs against unseen attackers."
+            },
+            "soloterrareStats": {
+                "attack": 70,
+                "defence": 140,
+                "chips": 700,
+                "critical": "Change a card of your choice into a 2.",
+                "forlorn": "Change a card of your choice into a 7.",
+                "activation": "Destroy a 7 in your primary hand. Change any card in your played hand into a 7."
+            }
+        },
+        {
+            "name": "Eight of Wands",
+            "index": 29,
+            "type": "minor",
+            "suit": "wands",
+            "value": "eight",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wa08.jpg",
+            "effects": {
+                "regular": "Change a card played in either your played hand or an opponent's played hand to a 8 before scoring.",
+                "southern": "Change a 8 in a played hand to a suit of your choosing.",
+                "coulette": "Rapid action, movement, quick decisions, air travel",
+                "soloterrare": "Eight staffs flying through the air, guided by unseen blind hands toward unseen targets."
+            },
+                "soloterrareStats": {
+                    "attack": 80,
+                    "defence": 160,
+                    "chips": 800,
+                    "critical": "Change a card of your choice into a 2.",
+                    "forlorn": "Change a card of your choice into a 8.",
+                    "activation": "Destroy a 8 in your primary hand. Change any card in your played hand into a 8."
+            }
+        },
+        {
+            "name": "Nine of Wands",
+            "index": 30,
+            "type": "minor",
+            "suit": "wands",
+            "value": "nine",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wa09.jpg",
+            "effects": {
+                "regular": "Change a card played in either your played hand or an opponent's played hand to a 9 before scoring.",
+                "southern": "Change a 9 in a played hand to a suit of your choosing.",
+                "coulette": "Resilience, persistence, boundaries, defense",
+                "soloterrare": "A wounded but determined blind figure leaning on nine staffs, guarding against further attacks."
+            },
+            "soloterrareStats": {
+                "attack": 90,
+                "defence": 180,
+                "chips": 900,
+                "critical": "Change a card of your choice into a 2.",
+                "forlorn": "Change a card of your choice into a 9.",
+                "activation": "Destroy a 9 in your primary hand. Change any card in your played hand into a 9."
+            }
+        },
+        {
+            "name": "Ten of Wands",
+            "index": 31,
+            "type": "minor",
+            "suit": "wands",
+            "value": "ten",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wa10.jpg",
+            "effects": {
+                "regular": "Change a card played in either your played hand or an opponent's played hand to a 10 before scoring.",
+                "southern": "Change a 10 in a played hand to a suit of your choosing.",
+                "coulette": "Burden, responsibility, hard work, completion",
+                "soloterrare": "A burdened blind figure struggling under the weight of ten heavy staffs, barely able to move forward."
+            },
+            "soloterrareStats": {
+                "attack": 100,
+                "defence": 200,
+                "chips": 1000,
+                "critical": "Change a card of your choice into a 2.",
+                "forlorn": "Change a card of your choice into a 10.",
+                "activation": "Destroy a 10 in your primary hand. Change any card in your played hand into a 10."
+            }
+        },
+        {
+            "name": "Page of Wands",
+            "index": 32,
+            "type": "minor",
+            "suit": "wands",
+            "value": "page",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wapa.jpg",
+            "effects": {
+                "regular": "Trade a card played in a played hand with the top card of any deck except the tarot deck. This swap is permanent and the owner of the played hand puts that card into their discard once this round ends.",
+                "southern": "Choose a card in a played hand, that card becomes the suit of your choosing.",
+                "coulette": "Exploration, discovery, enthusiasm, message",
+                "soloterrare": "A sad looking wizard, long blue robes frame a face of smooth skin, removed by some magical ability. He advances, tapping things with a sharpened wand."
+            },
+                "soloterrareStats": {
+                "attack": 80,
+                "defence": 100,
+                "chips": 400,
+                "critical": "Change any jacks in play into 2s.",
+                "forlorn": "Change a card in your played hand into a jack, then buff it by -9.",
+                "activation": "Destroy a Jack in your primary hand. Change any card in your played hand into a jack."
+            }
+        },
+        {
+            "name": "Knight of Wands",
+            "index": 33,
+            "type": "minor",
+            "suit": "wands",
+            "value": "knight",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/wakn.jpg",
+            "effects": {
+                "regular": "Change all jacks in played hands being played into kings.",
+                "southern": "Change a jack in a played hand to a suit of your choosing.",
+                "coulette": "Action, adventure, impulsiveness, travel",
+                "soloterrare": "A gaunt blind man, riding a snarling greyhound. He swings at the walls with a long spiked club."
+            },
+                "soloterrareStats": {
+                "attack": 90,
+                "defence": 90,
+                "chips": 400,
+                "critical": "Change all face cards in your played hand into 2s.",
+                "forlorn": "Change any card in your played hand into a 2.",
+                "activation": "Destroy a card in your primary hand. Change any card in your played hand into the rank of the destroyed card."
+            }
+        },
+        {
+            "name": "Queen of Wands",
+            "index": 34,
+            "type": "minor",
+            "suit": "wands",
+            "value": "queen",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/waqu.jpg",
+            "effects": {
+                "regular": "Change all kings in played hands being played into jacks.",
+                "southern": "Change a queen in a played hand to a suit of your choosing.",
+                "coulette": "Confidence, determination, warmth, vibrancy",
+                "soloterrare": "A thin, frail woman with long gray hair. Her eyes are milky blind and her long fingers grip a short wand as she fires strange magics into the darkness."
+            },
+                "soloterrareStats": {
+                "attack": 50,
+                "defence": 50,
+                "chips": 300,
+                "critical": "Change any queens in play into 2s.",
+                "forlorn": "Change a card in your played hand into a queen, then buff it by -5.",
+                "activation": "Destroy a Queen in your primary hand. Change any card in your played hand into a queen."
+            }
+        },
+        {
+            "name": "King of Wands",
+            "index": 35,
+            "type": "minor",
+            "suit": "wands",
+            "value": "king",
+            "image": "https://www.sacred-texts.com/tarot/pkt/img/waki.jpg",
+            "effects": {
+                "regular": "Steal each Queen and Jack in play into your played hand then destroy each card in your played hand that was not a Queen or Jack.",
+                "southern": "Change a king in a played hand to a suit of your choosing.",
+                "coulette": "Leadership, vision, entrepreneurship, honor",
+                "soloterrare": "A mad old man, his beard long and full of spiders as he cackles and whacks the walls with a long stick. Atop his head is a thorned crown, blood dripping through his beard, painting it a dark red."
+            },
+                "soloterrareStats": {
+                "attack": 70,
+                "defence": 45,
+                "chips": 500,
+                "critical": "Change a card of your choice into a king.",
+                "forlorn": "Change all kings into 2s.",
+                "activation": "Destroy a King in your primary hand. Change any card in your played hand into a king."
             }
         }
     ]
