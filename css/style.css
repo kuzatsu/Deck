@@ -21,7 +21,7 @@
   --text-m: var(--white-2);
   --text-l: var(--white-3);
   --bg-1: #056c6c;
-  --bg-2: #4a0a4b;
+  --bg-2: rgba(45, 27, 78, 0.9);;
 
   --white-1:#f5f5f5;
   --white-2:#f2f4f8;
@@ -46,7 +46,7 @@
   --purple-2:#6b4e94;
   --black:#111111;
   --container-background:#374244;
-    
+    --icon-idle:var(--yellow-0);
 }
 @font-face {
   font-family: Jacquard;
@@ -114,12 +114,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.05em;
 
-    .deck-selector, .suit-selector {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-
-        .dropdown {
+    .damage-input{
             padding: 12px 20px;
             border-radius: 8px;
             border: 2px solid #6b4e94;
@@ -129,30 +124,9 @@ h1 {
             cursor: pointer;
             transition: var(--transition);
             appearance: none;
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e9c46a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 15px center;
-            background-size: 16px;
-            padding-right: 45px;
             min-width: 200px;   
         }
-
-        .dropdown:hover {
-            transform: translate(-1px, -2px);
-        }
-
-        .dropdown:focus {
-            outline: none;
-            border-color: var(--yellow-0);
-            box-shadow: 0 0 15px rgba(233, 196, 106, 0.3);
-        }
-
-        .dropdown option {
-            background: #2d1b4e;
-            color: white;
-            padding: 10px;
-        }
-    }
+    
 
 
 
@@ -191,7 +165,48 @@ h1 {
 }
 
 
+.deck-selector, .suit-selector{
+        display: flex;
+        align-items: center;
+        gap: 15px;
 
+        
+
+      
+    }
+  .dropdown {
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 2px solid #6b4e94;
+            background: rgba(31, 20, 51, 0.8);
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e9c46a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 16px;
+            padding-right: 45px;
+            min-width: 200px;   
+        }
+
+        .dropdown:hover {
+            transform: translate(-1px, -2px);
+        }
+
+        .dropdown:focus {
+            outline: none;
+            border-color: var(--yellow-0);
+            box-shadow: 0 0 15px rgba(233, 196, 106, 0.3);
+        }
+
+        .dropdown option {
+            background: #2d1b4e;
+            color: white;
+            padding: 10px;
+        }
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -209,39 +224,10 @@ h1 {
         color: var(--yellow-0);
     }
 
-    /* Different colors for different sections */
-    /* .section-header:contains('MAJOR ARCANA') {
-        background: linear-gradient(to right, #3a2471, #2d1b4e);
-        color: #e9c46a;
-        border-left: 5px solid #e9c46a;
-    }
-
-    .section-header:contains('WANDS') {
-        background: linear-gradient(to right, #5d3a1a, #8b5a2b);
-        color: #ffaa33;
-        border-left: 5px solid #ffaa33;
-    }
-
-    .section-header:contains('CUPS') {
-        background: linear-gradient(to right, #1a365d, #2a4a7a);
-        color: #4fc3f7;
-        border-left: 5px solid #4fc3f7;
-    }
-
-    .section-header:contains('SWORDS') {
-        background: linear-gradient(to right, #37474f, #546e7a);
-        color: #b0bec5;
-        border-left: 5px solid #b0bec5;
-    }
-
-    .section-header:contains('PENTACLES') {
-        background: linear-gradient(to right, #33691e, #558b2f);
-        color: #dce775;
-        border-left: 5px solid #dce775;
-    } */
+    
 }
 
-.card {
+.card, .monster-card {
     background: #3a2471;
     border-radius: 12px;
     overflow: hidden;
@@ -251,7 +237,7 @@ h1 {
     height: 550px;
     display: flex;
     flex-direction: column;
-
+    max-width: 300px;
     border:1px solid black;
 }
 
@@ -588,6 +574,36 @@ h1 {
     font-size: 1.2rem;
     color: #9f85c9;
 }
+
+
+/* game*/
+
+        .btn {
+            padding: 12px 24px;
+            background: #4c2a7a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px 5px;
+        }
+        
+        .btn:hover {
+            background: #5d3a8c;
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: #2d1b4e;
+            color: #e9c46a;
+        }
+        
+        .btn-primary:hover {
+            background: #d4b15d;
+            box-shadow: 0 0 15px rgba(233, 196, 106, 0.5);
+        }
 
 @media (max-width: 768px) {
     .controls {

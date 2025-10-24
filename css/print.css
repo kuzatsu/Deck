@@ -1,0 +1,79 @@
+ .print-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+            fill:var(--icon-idle);
+        }
+        
+        .print-button:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+
+
+
+.print-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.print-modal.active {
+    display: flex;
+}
+
+/* Modal background using ::before pseudo-element */
+.print-modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.print-modal .modal-content {
+    background-color: var(--bg-2);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.print-modal .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+    z-index: 2;
+    color: var(--icon-idle);
+}
+
+.print-modal .modal-close:hover {
+    color: #ff0000;
+}
+
+.print-modal .modal-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
