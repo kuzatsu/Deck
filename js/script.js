@@ -20,6 +20,8 @@ function loadTarotData() {
         .then(response => response.json())
         .then(data => {
             tarotData = data;
+            // Expose tarot data globally for print view
+            window.tarotData = data;
             displayCards(tarotData.cards);
             setupEventListeners();
         })
